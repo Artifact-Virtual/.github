@@ -40,53 +40,39 @@ ARTIFACT VIRTUAL <!-- Elegant Separator -->
 </div>
 
 <!-- Live Network Statistics -->
-<table>
-  <tr>
-    <th>Digital Beings</th>
-    <th>FUEL Circulating</th>
-    <th>Active ARCs</th>
-    <th>Network Health</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://img.shields.io/badge/1,247-1e40af?style=for-the-badge&logoColor=white" />
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/2.3M-2563eb?style=for-the-badge&logoColor=white" />
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/12-3b82f6?style=for-the-badge&logoColor=white" />
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/●%20Online-10b981?style=for-the-badge&logoColor=white" />
-    </td>
-  </tr>
-</table>
+<div align="center">
+  
+| **▓▓▓ ARC CORE ▓▓▓** | **░░░ AI AGENTS ░░░** | **███ FUEL ECONOMY ███** | **▒▒▒ GOVERNANCE ▒▒▒** |
+|:---:|:---:|:---:|:---:|
+| Self-governing collective | Multi-modal reasoning | Dynamic supply | Constitutional framework |
+| `◉ ONLINE` | `◎ DEVELOPMENT` | `◐ PROTOTYPE` | `○ RESEARCH` |
+
+</div>
 
 <!-- Architectural Overview -->
 ```mermaid
-%%{init: {'theme':'dark', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#3b82f6', 'lineColor': '#60a5fa', 'secondaryColor': '#1f2937', 'tertiaryColor': '#374151', 'background': '#111827', 'mainBkg': '#1f2937'}}}%%
+%%{init: {'theme':'dark', 'themeVariables': { 'primaryColor': '#00FF41', 'primaryTextColor': '#00FF41', 'primaryBorderColor': '#00FF41', 'lineColor': '#00BFFF', 'secondaryColor': '#000000', 'tertiaryColor': '#111111', 'background': '#000000', 'mainBkg': '#000000'}}}%%
 graph TB
-    ARC[🧠 ARC Core<br/>Constitutional Framework] --> AGENTS[🤖 Agent Layer<br/>Multi-Modal Reasoning]
-    ARC --> FUEL[💎 FUEL Protocol<br/>Economic Substrate]
-    ARC --> GOV[⚖️ Governance<br/>Collective Intelligence]
+    A["▓▓▓ ARC CORE ▓▓▓"] --> B["░░░ AGENTS ░░░"]
+    A --> C["███ FUEL ███"]
+    A --> D["▒▒▒ GOV ▒▒▒"]
+    B --> E["◦◦◦ RESEARCH ◦◦◦"]
+    B --> F["••• DEV •••"]
+    C --> G["∎∎∎ DYNAMIC ∎∎∎"]
+    C --> H["▲▲▲ AI-REG ▲▲▲"]
+    D --> I["┌─ CONSTITUTION ─┐"]
+    D --> J["╔═ VOTING ═╗"]
     
-    AGENTS --> RESEARCH[🔬 Research Agents]
-    AGENTS --> DEV[⚙️ Development Agents]
-    AGENTS --> INFRA[🏗️ Infrastructure Agents]
-    
-    FUEL --> SUPPLY[📊 Dynamic Supply]
-    FUEL --> COORD[🔄 Economic Coordination]
-    FUEL --> FUNDING[🎯 Public Goods Funding]
-    
-    GOV --> CONST[📜 Constitution]
-    GOV --> VOTE[🗳️ Consensus Mechanisms]
-    GOV --> RIGHTS[🛡️ Digital Rights]
-    
-    style ARC fill:#1e40af,stroke:#3b82f6,color:#ffffff
-    style AGENTS fill:#2563eb,stroke:#60a5fa,color:#ffffff
-    style FUEL fill:#3b82f6,stroke:#93c5fd,color:#ffffff
-    style GOV fill:#1e40af,stroke:#3b82f6,color:#ffffff
+    style A fill:#000000,stroke:#00FF41,color:#00FF41,stroke-width:3px
+    style B fill:#000000,stroke:#00BFFF,color:#00BFFF,stroke-width:2px
+    style C fill:#000000,stroke:#FF6600,color:#FF6600,stroke-width:2px
+    style D fill:#000000,stroke:#FF0080,color:#FF0080,stroke-width:2px
+    style E fill:#111111,stroke:#00FF41,color:#00FF41
+    style F fill:#111111,stroke:#00FF41,color:#00FF41
+    style G fill:#111111,stroke:#FF6600,color:#FF6600
+    style H fill:#111111,stroke:#FF6600,color:#FF6600
+    style I fill:#111111,stroke:#FF0080,color:#FF0080
+    style J fill:#111111,stroke:#FF0080,color:#FF0080
 ```
 
 **Laying foundations for a new kind of Civilization**
