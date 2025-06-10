@@ -26,19 +26,6 @@ ARTIFACT VIRTUAL <!-- Elegant Separator -->
 *Building the foundational layer for autonomous reasoning systems,*  
 *economic coordination, and collective intelligence*
 
-<!-- Professional Action Buttons -->
-<div style="margin: 25px 0;">
-  <a href="#installation">
-    <img src="https://img.shields.io/badge/⚡%20Quick%20Start-1e40af?style=for-the-badge&logoColor=white" />
-  </a>
-  <a href="https://docs.artifact.virtual">
-    <img src="https://img.shields.io/badge/📚%20Documentation-2563eb?style=for-the-badge&logoColor=white" />
-  </a>
-  <a href="https://discord.gg/artifact-virtual">
-    <img src="https://img.shields.io/badge/💬%20Community-3b82f6?style=for-the-badge&logo=discord&logoColor=white" />
-  </a>
-</div>
-
 <!-- Live Network Statistics -->
 <div align="center">
   
