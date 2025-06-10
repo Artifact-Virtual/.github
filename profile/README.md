@@ -1,9 +1,4 @@
 <div align="center">
-
-ARTIFACT VIRTUAL <!-- Elegant Separator -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="500" />
-
-
 <!-- Sophisticated Badge Stack with Blue Accents -->
 <div style="margin: 30px 0;">
   <img src="https://img.shields.io/badge/Python-3.11+-1e3a8a?style=for-the-badge&logo=python&logoColor=white&labelColor=1f2937" />
@@ -63,5 +58,8 @@ graph TB
 ```
 
 **Laying foundations for a new kind of Civilization**
+
+<!-- Elegant Separator -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="500" />
 
 </div>
