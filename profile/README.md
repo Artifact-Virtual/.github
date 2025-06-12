@@ -20,42 +20,7 @@
 
 *Building the foundational layer for autonomous reasoning systems,*  
 *economic coordination, and collective intelligence*
-
-<!-- Live Network Statistics -->
-<div align="center">
-  
-| **▓▓▓ ARC CORE ▓▓▓** | **░░░ AI AGENTS ░░░** | **███ FUEL ECONOMY ███** | **▒▒▒ GOVERNANCE ▒▒▒** |
-|:---:|:---:|:---:|:---:|
-| Self-governing collective | Multi-modal reasoning | Dynamic supply | Constitutional framework |
-| `◉ ONLINE` | `◎ DEVELOPMENT` | `◐ PROTOTYPE` | `○ RESEARCH` |
-
-</div>
-
-<!-- Architectural Overview -->
-```mermaid
-%%{init: {'theme':'dark', 'themeVariables': { 'primaryColor': '#00FF41', 'primaryTextColor': '#00FF41', 'primaryBorderColor': '#00FF41', 'lineColor': '#00BFFF', 'secondaryColor': '#000000', 'tertiaryColor': '#111111', 'background': '#000000', 'mainBkg': '#000000'}}}%%
-graph TB
-    A["▓▓▓ ARC CORE ▓▓▓"] --> B["░░░ AGENTS ░░░"]
-    A --> C["███ FUEL ███"]
-    A --> D["▒▒▒ GOV ▒▒▒"]
-    B --> E["◦◦◦ RESEARCH ◦◦◦"]
-    B --> F["••• DEV •••"]
-    C --> G["∎∎∎ DYNAMIC ∎∎∎"]
-    C --> H["▲▲▲ AI-REG ▲▲▲"]
-    D --> I["┌─ CONSTITUTION ─┐"]
-    D --> J["╔═ VOTING ═╗"]
-    
-    style A fill:#000000,stroke:#00FF41,color:#00FF41,stroke-width:3px
-    style B fill:#000000,stroke:#00BFFF,color:#00BFFF,stroke-width:2px
-    style C fill:#000000,stroke:#FF6600,color:#FF6600,stroke-width:2px
-    style D fill:#000000,stroke:#FF0080,color:#FF0080,stroke-width:2px
-    style E fill:#111111,stroke:#00FF41,color:#00FF41
-    style F fill:#111111,stroke:#00FF41,color:#00FF41
-    style G fill:#111111,stroke:#FF6600,color:#FF6600
-    style H fill:#111111,stroke:#FF6600,color:#FF6600
-    style I fill:#111111,stroke:#FF0080,color:#FF0080
-    style J fill:#111111,stroke:#FF0080,color:#FF0080
-```
+': '#00FF41', 'primaryTextColor': '#00FF41', 'primaryBorderColor': '#00FF41', 
 
 **Laying foundations for a new kind of Civilization**
 
