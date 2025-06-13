@@ -20,7 +20,8 @@
 
 *Building the foundational layer for autonomous reasoning systems,*  
 *economic coordination, and collective intelligence*
-
+visit Artifact's monorepo (getting there) for more information:
+https://github.com/amuzetnoM/artifactvirtual
 
 <!-- Elegant Separator -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="500" />
