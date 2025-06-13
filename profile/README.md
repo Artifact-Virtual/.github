@@ -20,9 +20,7 @@
 
 *Building the foundational layer for autonomous reasoning systems,*  
 *economic coordination, and collective intelligence*
-': '#00FF41', 'primaryTextColor': '#00FF41', 'primaryBorderColor': '#00FF41', 
 
-**Laying foundations for a new kind of Civilization**
 
 <!-- Elegant Separator -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="500" />
