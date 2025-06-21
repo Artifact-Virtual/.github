@@ -15,7 +15,7 @@ Key to this is the integration of:
 **The Arc:** A foundational blockchain where the genesis block acts as a "living constitution," encoding the initial rules and identity of the network. The Arc provides an immutable and self-validating substrate.
 **ADAM Protocol:** The Autonomous Decentralized Awareness Module, serving as Artifact Virtual's constitutional intelligence. https://github.com/amuzetnoM/artifactvirtual/blob/ADE/docs%2Fadamprotocol.md implements self-modifying constitutional logic, creating a transparent, auditable, and ethically-driven system.
 
-Through the interplay of https://github.com/amuzetnoM/artifactvirtual/blob/ADE/docs%2Farc.md's robust foundation and the https://github.com/amuzetnoM/artifactvirtual/blob/ADE/docs%2Fadamprotocol.md's intelligent governance, Artifact Virtual establishes a new paradigm for decentralized autonomous systems, designed for automated research and capable of scaling to an interplanetary network.
+Through the interplay of the arc's robust foundation and the adamprotocol's intelligent governance, Artifact Virtual establishes a new paradigm for decentralized autonomous systems, designed for automated research and capable of scaling to an interplanetary network.
 
 
 *Building the foundational layer for autonomous reasoning systems,*  
