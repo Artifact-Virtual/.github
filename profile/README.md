@@ -8,12 +8,12 @@ Artifact Virtual is a pioneering framework for Explainable, Fully Autonomous, Re
 
 
 
-At its core, Artifact Virtual is more than just software; it's a "living architecture" citation:8 that evolves from a conceptual "thought" to a network of sovereign intelligences [citation:4]. Key to this is the integration of:
+At its core, Artifact Virtual is more than just software; it's a "living architecture" that evolves from a conceptual "thought" to a network of sovereign intelligences. Key to this is the integration of:
 
-The Arc:** A foundational blockchain where the genesis block acts as a "living constitution," encoding the initial rules and identity of the network [citation:7]. The Arc provides an immutable and self-validating substrate [citation:7].
-ADAM Protocol:** The Autonomous Decentralized Awareness Module, serving as Artifact Virtual's constitutional intelligence [citation:6]. https://github.com/amuzetnoM/artifactvirtual/blob/ADE/docs%2Fadamprotocol.md implements self-modifying constitutional logic, creating a transparent, auditable, and ethically-driven system [citation:6].
+**The Arc:** A foundational blockchain where the genesis block acts as a "living constitution," encoding the initial rules and identity of the network. The Arc provides an immutable and self-validating substrate.
+**ADAM Protocol:** The Autonomous Decentralized Awareness Module, serving as Artifact Virtual's constitutional intelligence. https://github.com/amuzetnoM/artifactvirtual/blob/ADE/docs%2Fadamprotocol.md implements self-modifying constitutional logic, creating a transparent, auditable, and ethically-driven system.
 
-Through the interplay of https://github.com/amuzetnoM/artifactvirtual/blob/ADE/docs%2Farc.md's robust foundation and the https://github.com/amuzetnoM/artifactvirtual/blob/ADE/docs%2Fadamprotocol.md's intelligent governance, Artifact Virtual establishes a new paradigm for decentralized autonomous systems, designed for automated research and capable of scaling to an interplanetary network [citation:4].
+Through the interplay of https://github.com/amuzetnoM/artifactvirtual/blob/ADE/docs%2Farc.md's robust foundation and the https://github.com/amuzetnoM/artifactvirtual/blob/ADE/docs%2Fadamprotocol.md's intelligent governance, Artifact Virtual establishes a new paradigm for decentralized autonomous systems, designed for automated research and capable of scaling to an interplanetary network.
 
 
 *Building the foundational layer for autonomous reasoning systems,*  
