@@ -1,7 +1,3 @@
-# documentation
-This repo hosts official documentation for the Artifact Virtual project.
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
