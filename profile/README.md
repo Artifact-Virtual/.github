@@ -26,8 +26,7 @@
 ```
 
 <div align="center">
-
-Artifact Virtual is a framework for Explainable AI (XAI) and Artificial General Intelligence (AGI), designed to advance scientific discovery and digital governance. It aims to create a transparent and ethically evolving digital environment through a self-governing system.
+Artifact Virtual Ecosystem aka the ARC is a framework for Explainable AI (XAI) and Artificial General Intelligence (AGI), designed to advance scientific discovery and digital governance. It aims to create a transparent and ethically evolving digital environment through a self-governing system.
 
 Key components include:
 
