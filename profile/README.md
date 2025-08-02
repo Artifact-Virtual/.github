@@ -28,7 +28,7 @@
 <!-- Artifact Virtual Ecosystem README.md -->
 
 <h1 align="center" style="color:white;">
-  Artifact Virtual Ecosystem: The ARC Project
+  THE ARC
 </h1>
 
 <p align="center" style="color:#ccc;">
