@@ -85,7 +85,7 @@ Artifact Virtual aims to create a decentralized, autonomous system for automated
   <a href="https://www.artifactvirtual.com" style="color:#6ee7b7;">Website</a> •
   <a href="https://docs.artifactvirtual.org" style="color:#6ee7b7;">Documentation</a>
 </p>
-For more information, visit the Artifact monorepo: [https://github.com/amuzetnoM/artifactvirtual](https://github.com/amuzetnoM/artifactvirtual)
+For more information, visit the Artifact monorepo: https://github.com/amuzetnoM/artifactvirtual
 
 <!-- Elegant Separator -->
 
