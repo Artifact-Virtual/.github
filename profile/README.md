@@ -39,7 +39,7 @@
 
 ## Overview
 
-Artifact Virtual is building the ARC—an ecosystem for transparent, ethical, and self-governing AI. Our mission: to advance scientific discovery and digital governance through a living, evolving framework.
+ARC is an ecosystem for transparent, ethical, and self-governing AI. Our mission: to advance scientific discovery and digital governance through a living, evolving framework.
 
 ---
 
