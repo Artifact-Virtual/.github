@@ -25,16 +25,66 @@
 
 ```
 
-<div align="center">
-Artifact Virtual Ecosystem aka the ARC is a framework for Explainable AI (XAI) and Artificial General Intelligence (AGI), designed to advance scientific discovery and digital governance. It aims to create a transparent and ethically evolving digital environment through a self-governing system.
+<!-- Artifact Virtual Ecosystem README.md -->
 
-Key components include:
+<h1 align="center" style="color:white;">
+  Artifact Virtual Ecosystem: The ARC Project
+</h1>
 
-*   **The Arc:** A blockchain providing an immutable foundation, where the genesis block serves as a "living constitution," encoding the network's initial rules and identity.
-*   **ADAM Protocol:** (Autonomous Decentralized Awareness Module) Constitutional intelligence that implements self-modifying constitutional logic, creating a transparent, auditable, and ethically-driven system.
+<p align="center" style="color:#ccc;">
+  <em>Framework for Explainable AI (XAI) and Artificial General Intelligence (AGI)</em>
+</p>
 
-Artifact Virtual seeks to establish a decentralized autonomous system for automated research, scalable to an interplanetary network, through the integration of the Arc's robust foundation and the ADAM Protocol's intelligent governance.
+---
 
+## Overview
+
+Artifact Virtual is building the ARC—an ecosystem for transparent, ethical, and self-governing AI. Our mission: to advance scientific discovery and digital governance through a living, evolving framework.
+
+---
+
+## ✦ Core Components
+
+### 1. **Constitutional Intelligence (CI)**
+- **Distributed Autonomy:** Governance is decentralized, evolving via self-modifying constitutional logic.
+- **AI-Guided Adaptation:** Dynamic rule evaluation and ethical alignment via layered feedback loops.
+- **Self-Governance:** The ARC ecosystem adapts, learns, and evolves—empowering digital societies.
+
+### 2. **The Arc Blockchain**
+- **Sovereign Foundation:** The Arc is a “living constitution” encoded in a sovereign blockchain.
+- **Genesis Block:** Immutable rules establish the foundation.
+- **7-Block Circular Design:** Enables self-validation, adaptive governance, and gasless operations.
+
+### 3. **ADAM Protocol**
+- **AI-Powered Governance:** ADAM is the constitutional layer, learning from network data and evolving decision-making.
+- **Continuous Evolution:** Proposes rule changes and aligns ethics through consensus and feedback.
+
+### 4. **Fuel: The Economic Substrate**
+- **Dual-Layered Economy:**
+  - **Inner Simulation:** Agents earn Fuel based on behavior, memory, and network dynamics.
+  - **Mainnet Value:** Fuel is collateralized (ETH/BTC), with a dynamic value bridge connecting layers.
+- **Dynamic Supply:** Issuance and decay are continuously tuned—no fixed supply.
+- **Incentivized Participation:** The system rewards contribution, penalizes hoarding, and cryptographically records all state transitions.
+
+---
+
+## Vision
+
+Artifact Virtual aims to create a decentralized, autonomous system for automated research—scalable to an interplanetary network—through the synergy of the Arc’s robust foundation and the ADAM Protocol’s intelligent governance.
+
+---
+
+<p align="center" style="color:#6ee7b7;">
+  <strong>ARC is not just artificial intelligence. It is constitutional, self-aware, and evolving—by design.</strong>
+</p>
+
+---
+
+<!-- Optionally, add links or badges below -->
+<p align="center">
+  <a href="https://www.artifactvirtual.com" style="color:#6ee7b7;">Website</a> •
+  <a href="https://docs.artifactvirtual.org" style="color:#6ee7b7;">Documentation</a>
+</p>
 For more information, visit the Artifact monorepo: [https://github.com/amuzetnoM/artifactvirtual](https://github.com/amuzetnoM/artifactvirtual)
 
 <!-- Elegant Separator -->
