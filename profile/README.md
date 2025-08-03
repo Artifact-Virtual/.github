@@ -25,7 +25,125 @@
 
 ```
 
-<!-- Artifact Virtual Ecosystem README.md -->
+<!-- ARCx Ecosystem Status & Roadmap - Main README Highlight -->
+
+<p align="center">
+
+</p>
+
+<h1 align="center">ARCx: The Foundation for Constitutional Intelligence</h1>
+
+<p align="center">
+ARCx is a decentralized funding infrastructure, providing a transparent and autonomous mechanism to support the development of Constitutional Intelligence.
+</p>
+
+🟢 Current Stage: ARCx Genesis Completed
+<p align="center">
+<img src="https://img.shields.io/badge/Status-Live-27ae60?style=flat-square"/>
+<img src="https://img.shields.io/badge/Security-Audited-3498db?style=flat-square"/>
+<img src="https://img.shields.io/badge/Vesting-Active-f39c12?style=flat-square"/>
+</p>
+
+We have successfully completed the initial deployment of ARCx, laying the groundwork for a new era of decentralized protocol funding. 
+The core infrastructure is now fully operational:
+
+ARCx Token: Deployed, verified, and distributed.
+
+Vesting System: Active and controlled by the Treasury Safe.
+
+Infrastructure: Secure, with sub-cent transactions and zero known vulnerabilities.
+
+Governance: Fully decentralized via the Treasury Safe, ensuring autonomous control.
+
+ARCx has fulfilled its primary mission, creating a secure and verifiable foundation for the next phase of development: the Arc Protocol.
+
+---
+
+🗺️ Roadmap to Constitutional Intelligence
+
+Our vision extends beyond a simple funding mechanism. We are building the future of self-governing protocols.
+
+1. Constitutional Intelligence Development (Q4 2025)
+This phase will focus on building the core of the Arc Protocol and its constitutional intelligence layer.
+
+Arc Protocol Foundation: Architecting the constitutional core of the Arc blockchain.
+
+ADAM Protocol: Initiating research into an AI-powered constitutional layer.
+
+Validator Framework: Designing sovereign validation systems.
+
+Governance Primitives: Developing self-modifying rule systems.
+
+2. Community Ecosystem Expansion (Q1 2026)
+We will expand the ecosystem and onboard new contributors.
+
+Developer Onboarding: Launching ARCx-funded grants.
+
+Community Distribution: Transparently allocating resources to contributors.
+
+Technical Documentation: Creating comprehensive guides for constitutional intelligence.
+
+Partnerships: Integrating with constitutional AI projects.
+
+3. FUEL Migration Preparation (Q2 2026)
+This phase will prepare for our final migration to the FUEL-powered network.
+
+Bridge Development: Building a bridge for a seamless ARCx → FUEL migration.
+
+Arc Network Testnet: Deploying the network using the FUEL substrate.
+
+Migration Testing: Testing the burn-to-mint mechanism to ensure a smooth transition.
+
+Value Preservation: Guaranteeing a 1:1 ARCx:FUEL conversion ratio.
+
+🛠️ Operational Milestones
+<p align="center">
+<img src="https://img.shields.io/badge/Actions-Completed-27ae60?style=flat-square"/>
+<img src="https://img.shields.io/badge/Reporting-On--chain-2d3436?style=flat-square"/>
+<img src="https://img.shields.io/badge/Security-Continuous-e74c3c?style=flat-square"/>
+</p>
+
+Monthly Vesting: The release of ~5,556 ARCx tokens will begin on August 15, 2026.
+
+Treasury Operations: Ongoing funding for constitutional intelligence development.
+
+Transparency: Regular on-chain reporting and public updates.
+
+Security: Continuous monitoring and optimization of all contracts.
+
+🚀 Immediate Actions (Next 30 Days)
+Our focus for the next month is to finalize documentation, announce our progress, and begin research for the Arc Protocol.
+
+✅ Finalize documentation.
+
+✅ Archive redundant scripts.
+
+✅ Complete workflow documents.
+
+✅ Update all web content.
+
+✅ Announce deployment completion.
+
+✅ Share verification and transparency portals.
+
+🚧 Outline the Arc Protocol roadmap.
+
+🚧 Establish Arc Protocol milestones.
+
+🚧 Begin constitutional intelligence research.
+
+🚧 Monitor vesting contract & Treasury Safe.
+
+💡 Long-Term Vision
+ARCx is the foundational layer for a new era of decentralized, transparent, and sustainable protocol funding. With autonomous governance and full on-chain verifiability, the ecosystem is ready for the development of the Arc Protocol and the transition toward a FUEL-powered constitutional intelligence economy.
+---
+
+
+  <b>Follow our progress & join the conversation:</b>  
+  <a href="https://www.artifactvirtual.com">www.artifactvirtual.com</a> • 
+  <a href="https://discord.gg/pUGPR3zh">Discord</a> • 
+  <a href="https://twitter.com/artifactvirtual">Twitter</a>
+</p>
 
 <h1 align="center" style="color:white;">
   THE ARC
