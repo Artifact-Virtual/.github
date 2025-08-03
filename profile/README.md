@@ -37,7 +37,7 @@
 ARCx is a decentralized funding infrastructure, providing a transparent and autonomous mechanism to support the development of Constitutional Intelligence.
 </p>
 
-🟢 Current Stage: ARCx Genesis Completed
+### 🟢 Current Stage: ARCx Genesis Completed
 <p align="center">
 <img src="https://img.shields.io/badge/Status-Live-27ae60?style=flat-square"/>
 <img src="https://img.shields.io/badge/Security-Audited-3498db?style=flat-square"/>
@@ -59,7 +59,7 @@ ARCx has fulfilled its primary mission, creating a secure and verifiable foundat
 
 ---
 
-🗺️ Roadmap to Constitutional Intelligence
+#### 🗺️ Roadmap to Constitutional Intelligence
 
 Our vision extends beyond a simple funding mechanism. We are building the future of self-governing protocols.
 
@@ -96,7 +96,7 @@ Migration Testing: Testing the burn-to-mint mechanism to ensure a smooth transit
 
 Value Preservation: Guaranteeing a 1:1 ARCx:FUEL conversion ratio.
 
-🛠️ Operational Milestones
+#### 🛠️ Operational Milestones
 <p align="center">
 <img src="https://img.shields.io/badge/Actions-Completed-27ae60?style=flat-square"/>
 <img src="https://img.shields.io/badge/Reporting-On--chain-2d3436?style=flat-square"/>
@@ -111,7 +111,10 @@ Transparency: Regular on-chain reporting and public updates.
 
 Security: Continuous monitoring and optimization of all contracts.
 
-🚀 Immediate Actions (Next 30 Days)
+---
+
+#### Immediate Actions (Next 30 Days)
+
 Our focus for the next month is to finalize documentation, announce our progress, and begin research for the Arc Protocol.
 
 ✅ Finalize documentation.
@@ -134,9 +137,12 @@ Our focus for the next month is to finalize documentation, announce our progress
 
 🚧 Monitor vesting contract & Treasury Safe.
 
-💡 Long-Term Vision
+--
+
+###💡 Long-Term Vision
 ARCx is the foundational layer for a new era of decentralized, transparent, and sustainable protocol funding. With autonomous governance and full on-chain verifiability, the ecosystem is ready for the development of the Arc Protocol and the transition toward a FUEL-powered constitutional intelligence economy.
----
+
+--
 
 
   <b>Follow our progress & join the conversation:</b>  
