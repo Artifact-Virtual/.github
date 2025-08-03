@@ -31,7 +31,7 @@
 
 </p>
 
-<h1 align="center">ARCx: The Foundation for Constitutional Intelligence</h1>
+<h1 align="center">ARCx: The Foundation</h1>
 
 <p align="center">
 ARCx is a decentralized funding infrastructure, providing a transparent and autonomous mechanism to support the development of Constitutional Intelligence.
