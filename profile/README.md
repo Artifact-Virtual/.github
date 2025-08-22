@@ -28,7 +28,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/ARCx-Foundation-black?style=for-the-badge&logo=react&logoColor=white" />
   <img src="https://img.shields.io/badge/ADAM-Constitutional%20Intelligence-white?style=for-the-badge&logo=codeforces&logoColor=black" />
-  <img src="https://img.shields.io/badge/Status-The%20Edge%20That%20Bleeds-red?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/The%20Edge%20That%20Bleeds-red?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
 <h1 align="center">ARCx: The Foundation</h1>
