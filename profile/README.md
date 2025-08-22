@@ -25,97 +25,106 @@
 
 ```
 
-<!-- ARCx Ecosystem Status & Roadmap - Main README Highlight -->
-
 <p align="center">
-
+  <img src="https://img.shields.io/badge/ARCx-Foundation-black?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Artifact-Constitutional%20Intelligence-white?style=for-the-badge&logo=codeforces&logoColor=black" />
+  <img src="https://img.shields.io/badge/Status-The%20Edge%20That%20Bleeds-red?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
 <h1 align="center">ARCx: The Foundation</h1>
 
-<p align="center">
-ARCx is a decentralized funding infrastructure, providing a transparent and autonomous mechanism to support the development of Constitutional Intelligence, preserving human governance and agency in an AI-driven future.
-</p>
+---
 
-### 🟢 Current Stage: ARCx Genesis Completed
-<p align="center">
-<img src="https://img.shields.io/badge/Status-Live-27ae60?style=flat-square"/>
-<img src="https://img.shields.io/badge/Security-Audited-3498db?style=flat-square"/>
-<img src="https://img.shields.io/badge/Vesting-Active-f39c12?style=flat-square"/>
-</p>
-
-We have successfully completed the initial deployment of ARCx, laying the groundwork for a new era of decentralized protocol funding. 
-The core infrastructure is now fully operational:
-
-ARCx Token: Deployed, verified, and distributed.
-
-Vesting System: Active and controlled by the Treasury Safe.
-
-Infrastructure: Secure, with sub-cent transactions and zero known vulnerabilities.
-
-Governance: Fully decentralized via the Treasury Safe, ensuring autonomous control.
-
-ARCx has fulfilled its primary mission, creating a secure and verifiable foundation for the next phase of development: the Arc Protocol.
+<p align="center"><em>To Build Intelligence That Endures</em></p>
 
 ---
 
-#### 🗺️ Roadmap to Constitutional Intelligence
+### The Problem  
 
-Our vision extends beyond a simple funding mechanism. We are building the future of self-governing protocols.
+Artificial intelligence is not destiny. It is architecture.  
+The myth of generality seduces: one mind, infinite domains, a digital workforce without error.  
+But hallucination is not a bug; it is the ontology of the large language model.  
+To mistake it for a brain is to mistake smoke for fire.  
 
-1. Constitutional Intelligence Development (Q4 2025)
-This phase will focus on building the core of the Arc Protocol and its constitutional intelligence layer.
-
-Arc Protocol Foundation: Architecting the constitutional core of the Arc blockchain.
-
-ADAM Protocol: Initiating research into an AI-powered constitutional layer.
-
-Validator Framework: Designing sovereign validation systems.
-
-Governance Primitives: Developing self-modifying rule systems.
-
-2. Community Ecosystem Expansion (Q1 2026)
-We will expand the ecosystem and onboard new contributors.
-
-Developer Onboarding: Launching ARCx-funded grants.
-
-Community Distribution: Transparently allocating resources to contributors.
-
-Technical Documentation: Creating comprehensive guides for constitutional intelligence.
-
-Partnerships: Integrating with constitutional AI projects.
-
-3. FUEL Migration Preparation (Q2 2026)
-This phase will prepare for our final migration to the FUEL-powered network.
-
-Bridge Development: Building a bridge for a seamless ARCx → FUEL migration.
-
-Arc Network Testnet: Deploying the network using the FUEL substrate.
-
-Migration Testing: Testing the burn-to-mint mechanism to ensure a smooth transition.
-
-Value Preservation: Guaranteeing a 1:1 ARCx:FUEL conversion ratio.
-
-#### 🛠️ Operational Milestones
-<p align="center">
-<img src="https://img.shields.io/badge/Actions-Completed-27ae60?style=flat-square"/>
-<img src="https://img.shields.io/badge/Reporting-On--chain-2d3436?style=flat-square"/>
-<img src="https://img.shields.io/badge/Security-Continuous-e74c3c?style=flat-square"/>
-</p>
-
-Monthly Vesting: The release of ~5,556 ARCx tokens will begin on August 15, 2026.
-
-Treasury Operations: Ongoing funding for constitutional intelligence development.
-
-Transparency: Regular on-chain reporting and public updates.
-
-Security: Continuous monitoring and optimization of all contracts.
+The true edge lies not in infinity but in **constraint**.  
+Constraint clarifies. Constraint civilizes.  
+A closed world is not smaller than the open one—it is curved, it has topology, it has law.  
+In this curvature lies reliability, sovereignty, and truth.  
 
 ---
 
-#### Immediate Actions (Next 30 Days)
+### The Illusion of Generality  
 
-Our focus for the next month is to finalize documentation, announce our progress, and begin research for the Arc Protocol.
+Intelligence has never been singular. The human mind is a legion of agents negotiating across time.  
+So too in the Artifact order:  
+
+- **Legion** → multiplicity, swarm as architecture, specialized minds in adversarial dance.  
+- **REASON** → recursion as governor, every act attacked until falsification fails.  
+
+Together they replace the myth of the one with the truth of the many.  
+
+---
+
+### Non-Euclidean Logic  
+
+LLMs are terminals. Left raw, they crash into their own chaos.  
+In Artifact, every agent is wrapped in **hybrid type theory contracts**:  
+self-describing, strongly typed, cryptographically enforced.  
+
+Here logic is not flat. **It bends.**  
+Non-Euclidean models absorb contradiction without collapse.  
+Paradox becomes computable space, not fatal error.  
+Agents reason in curved geometries where uncertainty is not weakness but structure.  
+
+---
+
+### The Power of Constraint  
+
+Businesses do not need prophets who hallucinate.  
+They need jurists, accountants, guardians.  
+Closed-world domains—claims, tickets, compliance—are not trivial; they are the crucibles of civilization.  
+
+An Artifact agent does not improvise. It adjudicates.  
+It acts under law.  
+It is sovereign within its boundary, accountable to its constitution, auditable by design.  
+
+---
+
+### The Mesh of Agents  
+
+We do not build “chatbots.”  
+We build **sovereigns**: purpose-built cognitive agents, each one a constitutional function.  
+Orchestrated, they form a **living mesh**.  
+
+- Every tool is typed, signed, access-controlled.  
+- Every action is pre-contested by adversarial swarms.  
+- Every output is proof, not prose.  
+
+This is civilization, not software.  
+
+---
+
+### Pragmata  
+
+The Artifact vision is not AGI.  
+It is **Constitutional Intelligence**:  
+
+- **ARC** → sovereign substrate  
+- **FUEL** → metabolic currency  
+- **ADAM** → protocol of rights and memory  
+- **Legion** → architecture of multiplicity  
+- **REASON** → recursion of judgment  
+
+Control is not limitation. **Control is civilization.**  
+Constraint is not the absence of freedom; it is the condition for truth.  
+
+This is not the bleeding edge.  
+This is the edge that bleeds.  
+
+---
+
+
+
 
 ✅ Finalize documentation.
 
