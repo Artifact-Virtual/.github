@@ -118,8 +118,6 @@ It is **Constitutional Intelligence**:
 Control is not limitation. **Control is civilization.**  
 Constraint is not the absence of freedom; it is the condition for truth.  
 
-This is not the bleeding edge.  
-This is the edge that bleeds.  
 
 ---
 
@@ -185,4 +183,6 @@ For more information, visit the Artifact monorepo: https://github.com/amuzetnoM/
 	<img src="https://www.abuseipdb.com/contributor/224927.svg" alt="AbuseIPDB Contributor Badge" style="width: 200px;box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, .2);">
 </a>
 
+This is not the bleeding edge.  
+This is the edge that bleeds.  
 </div>
