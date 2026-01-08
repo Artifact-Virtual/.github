@@ -31,120 +31,6 @@
   <img src="https://img.shields.io/badge/The%20Edge%20That%20Bleeds-red?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
-<h1 align="center">ARCx: The Foundation</h1>
-
----
-
-<p align="center"><em>To Build Intelligence That Endures</em></p>
-
----
-
-### The Problem  
-
-Artificial intelligence is not destiny. It is architecture.  
-The myth of generality seduces: one mind, infinite domains, a digital workforce without error.  
-But hallucination is not a bug; it is the ontology of the large language model.  
-To mistake it for a brain is to mistake smoke for fire.  
-
-The true edge lies not in infinity but in **constraint**.  
-Constraint clarifies. Constraint civilizes.  
-A closed world is not smaller than the open one—it is curved, it has topology, it has law.  
-In this curvature lies reliability, sovereignty, and truth.  
-
----
-
-### The Illusion of Generality  
-
-Intelligence has never been singular. The human mind is a legion of agents negotiating across time.  
-So too in the Artifact order:  
-
-- **Legion** → multiplicity, swarm as architecture, specialized minds in adversarial dance.  
-- **REASON** → recursion as governor, every act attacked until falsification fails.  
-
-Together they replace the myth of the one with the truth of the many.  
-
----
-
-### Non-Euclidean Logic  
-
-LLMs are terminals. Left raw, they crash into their own chaos.  
-In Artifact, every agent is wrapped in **hybrid type theory contracts**:  
-self-describing, strongly typed, cryptographically enforced.  
-
-Here logic is not flat. **It bends.**  
-Non-Euclidean models absorb contradiction without collapse.  
-Paradox becomes computable space, not fatal error.  
-Agents reason in curved geometries where uncertainty is not weakness but structure.  
-
----
-
-### The Power of Constraint  
-
-Businesses do not need prophets who hallucinate.  
-They need jurists, accountants, guardians.  
-Closed-world domains—claims, tickets, compliance—are not trivial; they are the crucibles of civilization.  
-
-An Artifact agent does not improvise. It adjudicates.  
-It acts under law.  
-It is sovereign within its boundary, accountable to its constitution, auditable by design.  
-
----
-
-### The Mesh of Agents  
-
-We do not build “chatbots.”  
-We build **sovereigns**: purpose-built cognitive agents, each one a constitutional function.  
-Orchestrated, they form a **living mesh**.  
-
-- Every tool is typed, signed, access-controlled.  
-- Every action is pre-contested by adversarial swarms.  
-- Every output is proof, not prose.  
-
-This is civilization, not software.  
-
----
-
-### Pragmata  
-
-The Artifact vision is not AGI.  
-It is **Constitutional Intelligence**:  
-
-- **ARC** → sovereign substrate  
-- **FUEL** → metabolic currency  
-- **ADAM** → protocol of rights and memory  
-- **Legion** → architecture of multiplicity  
-- **REASON** → recursion of judgment  
-
-Control is not limitation. **Control is civilization.**  
-Constraint is not the absence of freedom; it is the condition for truth.  
-
-
----
-
-
-
-
-✅ Finalize documentation.
-
-✅ Archive redundant scripts.
-
-✅ Complete workflow documents.
-
-✅ Update all web content.
-
-✅ Announce deployment completion.
-
-✅ Share verification and transparency portals.
-
-🚧 Outline the Arc Protocol roadmap.
-
-🚧 Establish Arc Protocol milestones.
-
-🚧 Begin constitutional intelligence research.
-
-🚧 Monitor vesting contract & Treasury Safe.
-
----
 
 <!-- Optionally, add links or badges below -->
 <p align="center">
@@ -186,3 +72,6 @@ For more information, visit the Artifact monorepo: https://github.com/amuzetnoM/
 This is not the bleeding edge.  
 This is the edge that bleeds.  
 </div>
+
+
+<p align="center"><em>commit.</em></p>
