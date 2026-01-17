@@ -9,7 +9,8 @@
 ████  █████  ████  ██        ████████  ████  ██  ████  ███      ██
 
 ```
-                                                                  
+
+ </p>                                                            
 
 <p align="center">
   <img src="https://img.shields.io/badge/ARCx-Foundation-black?style=for-the-badge&logo=react&logoColor=white" />
