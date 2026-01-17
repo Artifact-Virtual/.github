@@ -9,10 +9,7 @@
 ████  █████  ████  ██        ████████  ████  ██  ████  ███      ██
 
 ```
-
- </p>                                                            
-
-<p align="center">
+                                                 
   <img src="https://img.shields.io/badge/ARCx-Foundation-black?style=for-the-badge&logo=react&logoColor=white" />
   <img src="https://img.shields.io/badge/ADAM-Constitutional%20Intelligence-white?style=for-the-badge&logo=codeforces&logoColor=black" />
   <img src="https://img.shields.io/badge/Bleeding%20Edge-red?style=for-the-badge&logo=&logoColor=white" />
