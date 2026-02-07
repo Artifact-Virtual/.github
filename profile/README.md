@@ -1,7 +1,5 @@
 <div align="center">
 
-# ARTIFACT VIRTUAL
-
 **Machined Infrastructure for the Digital Age**
 
 [![Status](https://img.shields.io/badge/status-operational-00ffd5?style=for-the-badge)](#)
