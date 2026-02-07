@@ -6,8 +6,6 @@
 [![Founded](https://img.shields.io/badge/founded-2026-1a1a1f?style=for-the-badge)](#)
 [![Regions](https://img.shields.io/badge/regions-Asia%20|%20Americas%20|%20Europe-0A4D8C?style=for-the-badge)](#)
 
-*commit.*
-
 </div>
 
 ---
