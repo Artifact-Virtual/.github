@@ -25,7 +25,7 @@ We engineer high-precision data center, cloud, and AI solutions — designed for
 | Value | Meaning |
 |-------|---------|
 | **Precision** | Every system machined to specification |
-| **Resilience** | Built for 99.99% uptime, air-gapped ready |
+| **Resilience** | Built for 99.99% uptime, air-gap ready |
 | **Ownership** | Full-stack accountability, no finger-pointing |
 | **Speed** | Ship fast, iterate faster |
 
