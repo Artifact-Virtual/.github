@@ -320,7 +320,7 @@
         .pre-title {
             font-family: 'JetBrains Mono', monospace;
             color: var(--accent-cyan);
-            font-size: 0.875rem;
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
             margin-bottom: 1rem;
             display: block;
         }
@@ -340,11 +340,12 @@
 
         .hero-desc {
             max-width: 600px;
-            font-size: 1.1rem;
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
             color: var(--text-secondary);
             margin-bottom: 3rem;
             border-left: 1px solid var(--accent-cyan);
-            padding-left: 1.5rem;
+            padding-left: clamp(1rem, 3vw, 1.5rem);
+            line-height: 1.6;
         }
 
         .monolith-section {
@@ -363,7 +364,7 @@
         .machined-block {
             grid-column: span 4;
             background: var(--basalt-surface);
-            padding: 3rem;
+            padding: clamp(2rem, 4vw, 3rem);
             position: relative;
             overflow: hidden;
             transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -386,34 +387,38 @@
 
         .block-id {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.7rem;
+            font-size: clamp(0.65rem, 1.5vw, 0.7rem);
             color: var(--accent-cyan);
-            margin-bottom: 2rem;
+            margin-bottom: clamp(1rem, 3vw, 2rem);
             display: block;
             opacity: 0.5;
         }
 
         .block-title {
-            font-size: 1.5rem;
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
             font-weight: 700;
             margin-bottom: 1rem;
             text-transform: uppercase;
             letter-spacing: -0.02em;
+            line-height: 1.2;
         }
 
         .block-content {
-            font-size: 0.9rem;
+            font-size: clamp(0.85rem, 2vw, 0.9rem);
             color: var(--text-secondary);
-            margin-bottom: 2rem;
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            line-height: 1.6;
         }
 
         .block-footer {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.75rem;
+            font-size: clamp(0.7rem, 1.5vw, 0.75rem);
             padding-top: 1.5rem;
             border-top: 1px solid var(--machined-line);
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
         }
 
         .featured-span {
@@ -431,15 +436,16 @@
 
         .stat-item {
             flex: 1;
-            padding: 4rem;
+            padding: clamp(2rem, 5vw, 4rem);
             border-right: 1px solid var(--basalt-edge);
             text-align: center;
+            min-width: 150px;
         }
 
         .stat-value {
             display: block;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 3rem;
+            font-size: clamp(2rem, 5vw, 3rem);
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 0.5rem;
@@ -447,7 +453,7 @@
 
         .stat-label {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.7rem;
+            font-size: clamp(0.65rem, 1.5vw, 0.7rem);
             text-transform: uppercase;
             letter-spacing: 0.2em;
             color: var(--accent-cyan);
@@ -455,16 +461,17 @@
 
         .cta-monolith {
             display: inline-block;
-            padding: 1.25rem 3rem;
+            padding: clamp(1rem, 2.5vw, 1.25rem) clamp(2rem, 5vw, 3rem);
             background: var(--text-primary);
             color: var(--basalt-deep);
             text-decoration: none;
             font-family: 'JetBrains Mono', monospace;
             font-weight: 700;
             text-transform: uppercase;
-            font-size: 0.875rem;
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
             transition: all 0.3s;
             position: relative;
+            text-align: center;
         }
 
         .cta-monolith:hover {
@@ -536,20 +543,47 @@
                 padding: 0 2rem; 
                 min-height: 80vh;
             }
-            .monolith-section { padding: 4rem 2rem; }
-            .grid-container { display: flex; flex-direction: column; }
-            .machined-block { grid-column: span 12; }
-            .featured-span { grid-column: span 12; }
-            .stat-strip { flex-direction: column; }
-            .stat-item { padding: 2rem; }
-            .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-            footer { padding: 4rem 2rem 2rem; }
+            .monolith-section { 
+                padding: 4rem 2rem; 
+            }
+            .grid-container { 
+                display: flex; 
+                flex-direction: column; 
+                gap: 1px;
+            }
+            .machined-block { 
+                grid-column: span 12; 
+            }
+            .featured-span { 
+                grid-column: span 12; 
+            }
+            .stat-strip { 
+                flex-direction: column; 
+            }
+            .stat-item { 
+                padding: 2rem; 
+                border-right: none;
+                border-bottom: 1px solid var(--basalt-edge);
+            }
+            .stat-item:last-child {
+                border-bottom: none;
+            }
+            .footer-grid { 
+                grid-template-columns: 1fr 1fr; 
+                gap: 2rem; 
+            }
+            footer { 
+                padding: 4rem 2rem 2rem; 
+            }
             .hamburger {
                 display: flex;
             }
             .nav-links,
             nav .cta-monolith {
                 display: none;
+            }
+            .cta-monolith:hover {
+                transform: translateX(5px);
             }
         }
 
@@ -561,6 +595,21 @@
             h1 {
                 font-size: clamp(2.5rem, 10vw, 4rem);
             }
+            .hero {
+                min-height: 70vh;
+            }
+            .monolith-section {
+                padding: 3rem 1.5rem;
+            }
+            .machined-block {
+                padding: 2rem;
+            }
+            .block-title {
+                font-size: 1.35rem;
+            }
+            .stat-item {
+                padding: 1.75rem;
+            }
         }
 
         @media (max-width: 640px) {
@@ -569,19 +618,86 @@
             }
             .hero {
                 padding: 0 1.5rem;
+                min-height: 65vh;
             }
             .sidebar {
                 width: 100%;
             }
-            .footer-grid { grid-template-columns: 1fr; }
+            .footer-grid { 
+                grid-template-columns: 1fr; 
+            }
             h1 {
                 font-size: clamp(2rem, 12vw, 3rem);
+                line-height: 1;
             }
             .hero-desc {
                 font-size: 1rem;
+                margin-bottom: 2rem;
             }
             .stat-value {
                 font-size: 2rem;
+            }
+            .machined-block {
+                padding: 1.75rem;
+            }
+            .block-title {
+                font-size: 1.25rem;
+            }
+            .block-content {
+                font-size: 0.875rem;
+            }
+            .cta-monolith {
+                width: 100%;
+                max-width: 300px;
+            }
+            .monolith-section {
+                padding: 2.5rem 1.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                min-height: 60vh;
+                padding: 0 1.25rem;
+            }
+            .pre-title {
+                font-size: 0.75rem;
+            }
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+            }
+            .hero-desc {
+                font-size: 0.9rem;
+                padding-left: 1rem;
+            }
+            .machined-block {
+                padding: 1.5rem;
+            }
+            .block-id {
+                font-size: 0.65rem;
+                margin-bottom: 1rem;
+            }
+            .block-title {
+                font-size: 1.15rem;
+            }
+            .block-footer {
+                font-size: 0.7rem;
+            }
+            .stat-item {
+                padding: 1.5rem 1rem;
+            }
+            .stat-value {
+                font-size: 1.75rem;
+            }
+            .stat-label {
+                font-size: 0.65rem;
+            }
+            footer {
+                padding: 3rem 1.25rem 1.5rem;
+            }
+            .footer-grid {
+                gap: 2rem;
             }
         }
     </style>
