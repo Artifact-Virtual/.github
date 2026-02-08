@@ -188,10 +188,25 @@
             font-size: 0.65rem;
             color: #444;
         }
+        @media (max-width: 1024px) {
+            nav { padding: 1.5rem 2rem; }
+            .content { padding: 3rem 1.5rem 6rem; }
+        }
+
         @media (max-width: 768px) {
-            nav { padding: 1rem 2rem; }
+            nav { padding: 1rem 1.5rem; }
             .nav-links { display: none; }
             .content { padding: 2rem 1rem 4rem; }
+        }
+
+        @media (max-width: 640px) {
+            nav { padding: 1rem 1.25rem; }
+            .content { padding: 2rem 1rem 4rem; }
+        }
+
+        @media (max-width: 480px) {
+            nav { padding: 1rem 1rem; }
+            .content { padding: 1.5rem 0.75rem 3rem; }
         }
     </style>
 </head>
