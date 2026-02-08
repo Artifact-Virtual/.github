@@ -619,7 +619,7 @@
         </div>
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="index.html#solutions" class="active">Solutions</a></li>
+                <li><a href="index.html#solutions">Solutions</a></li>
                 <li><a href="infrastructure.html">Infrastructure</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="privacy-policy.html">Privacy</a></li>
@@ -834,13 +834,18 @@
             });
         });
 
-        // Enhanced topographic animation
+        // Enhanced topographic line animation with smooth wave motion
         const topoLines = document.querySelectorAll('.topo-line');
-        let tl = 0;
+        const ANIMATION_SPEED = 0.005; // Controls the speed of wave movement
+        const PHASE_MULTIPLIER = 0.5;  // Controls the phase offset between lines
+        const AMPLITUDE = 15;           // Controls the vertical movement amplitude in pixels
+        
+        let animationTime = 0;
+        
         function animateTopoLines() {
-            tl += 0.005;
+            animationTime += ANIMATION_SPEED;
             topoLines.forEach((line, i) => {
-                const offset = Math.sin(tl + i * 0.5) * 15;
+                const offset = Math.sin(animationTime + i * PHASE_MULTIPLIER) * AMPLITUDE;
                 line.style.transform = `translateY(${offset}px)`;
             });
             requestAnimationFrame(animateTopoLines);
