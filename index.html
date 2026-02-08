@@ -37,27 +37,218 @@
             line-height: 1.5;
         }
 
-        /* Machined Texture Overlay */
-        body::before {
-            content: "";
+        /* Animated Topographic Lines Background */
+        .topo-lines {
             position: fixed;
             inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-            opacity: 0.03;
-            pointer-events: none;
-            z-index: 1000;
-        }
-
-        /* Structural Grid Lines */
-        .machined-grid {
-            position: fixed;
-            inset: 0;
-            background-image: 
-                linear-gradient(to right, var(--machined-line) 1px, transparent 1px),
-                linear-gradient(to bottom, var(--machined-line) 1px, transparent 1px);
-            background-size: 10vw 10vh;
             pointer-events: none;
             z-index: -1;
+            overflow: hidden;
+        }
+
+        .topo-lines svg {
+            width: 100%;
+            height: 100%;
+            opacity: 0.08;
+        }
+
+        .topo-line {
+            fill: none;
+            stroke: var(--accent-cyan);
+            stroke-width: 1;
+            vector-effect: non-scaling-stroke;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .topo-line:nth-child(2) { animation-delay: -5s; animation-duration: 25s; }
+        .topo-line:nth-child(3) { animation-delay: -10s; animation-duration: 30s; }
+        .topo-line:nth-child(4) { animation-delay: -15s; animation-duration: 22s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            50% { transform: translateY(-20px) translateX(10px); }
+        }
+
+        /* Mobile Sidebar Styles */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 320px;
+            height: 100vh;
+            background: var(--basalt-elevated);
+            backdrop-filter: blur(20px);
+            border-left: 1px solid var(--accent-cyan);
+            z-index: 1001;
+            transition: right 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+            overflow-y: auto;
+            box-shadow: -10px 0 50px rgba(0, 255, 213, 0.1);
+        }
+
+        .sidebar.active {
+            right: 0;
+        }
+
+        .sidebar-header {
+            padding: 2rem;
+            border-bottom: 1px solid var(--basalt-edge);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .sidebar-logo img {
+            height: 32px;
+            width: auto;
+            filter: brightness(0) invert(1);
+        }
+
+        .sidebar-close {
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .sidebar-close:hover {
+            color: var(--accent-cyan);
+            transform: rotate(90deg);
+        }
+
+        .sidebar-nav {
+            padding: 2rem;
+        }
+
+        .sidebar-nav ul {
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar-nav a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: all 0.3s;
+            border-left: 2px solid transparent;
+        }
+
+        .sidebar-nav a:hover,
+        .sidebar-nav a.active {
+            color: var(--accent-cyan);
+            background: rgba(0, 255, 213, 0.05);
+            border-left-color: var(--accent-cyan);
+        }
+
+        .sidebar-nav a::before {
+            content: ">";
+            color: var(--accent-cyan);
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .sidebar-nav a:hover::before,
+        .sidebar-nav a.active::before {
+            opacity: 1;
+        }
+
+        .sidebar-cta {
+            margin: 2rem;
+            padding: 1rem;
+            background: var(--accent-cyan);
+            color: var(--basalt-deep);
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            transition: all 0.3s;
+        }
+
+        .sidebar-cta:hover {
+            background: var(--text-primary);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 255, 213, 0.2);
+        }
+
+        .sidebar-footer {
+            padding: 2rem;
+            border-top: 1px solid var(--basalt-edge);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        .sidebar-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(8, 8, 9, 0.9);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s;
+        }
+
+        .sidebar-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 100;
+        }
+
+        .hamburger span {
+            width: 28px;
+            height: 2px;
+            background: var(--text-primary);
+            transition: all 0.3s;
+        }
+
+        .hamburger:hover span {
+            background: var(--accent-cyan);
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
         }
 
         nav {
@@ -68,8 +259,8 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            background: linear-gradient(to bottom, var(--basalt-deep), transparent);
-            backdrop-filter: blur(8px);
+            background: linear-gradient(to bottom, rgba(8, 8, 9, 0.95), transparent);
+            backdrop-filter: blur(12px);
         }
 
         .logo {
@@ -129,7 +320,7 @@
         .pre-title {
             font-family: 'JetBrains Mono', monospace;
             color: var(--accent-cyan);
-            font-size: 0.875rem;
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
             margin-bottom: 1rem;
             display: block;
         }
@@ -149,11 +340,12 @@
 
         .hero-desc {
             max-width: 600px;
-            font-size: 1.1rem;
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
             color: var(--text-secondary);
             margin-bottom: 3rem;
             border-left: 1px solid var(--accent-cyan);
-            padding-left: 1.5rem;
+            padding-left: clamp(1rem, 3vw, 1.5rem);
+            line-height: 1.6;
         }
 
         .monolith-section {
@@ -172,7 +364,7 @@
         .machined-block {
             grid-column: span 4;
             background: var(--basalt-surface);
-            padding: 3rem;
+            padding: clamp(2rem, 4vw, 3rem);
             position: relative;
             overflow: hidden;
             transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -195,34 +387,38 @@
 
         .block-id {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.7rem;
+            font-size: clamp(0.65rem, 1.5vw, 0.7rem);
             color: var(--accent-cyan);
-            margin-bottom: 2rem;
+            margin-bottom: clamp(1rem, 3vw, 2rem);
             display: block;
             opacity: 0.5;
         }
 
         .block-title {
-            font-size: 1.5rem;
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
             font-weight: 700;
             margin-bottom: 1rem;
             text-transform: uppercase;
             letter-spacing: -0.02em;
+            line-height: 1.2;
         }
 
         .block-content {
-            font-size: 0.9rem;
+            font-size: clamp(0.85rem, 2vw, 0.9rem);
             color: var(--text-secondary);
-            margin-bottom: 2rem;
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            line-height: 1.6;
         }
 
         .block-footer {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.75rem;
+            font-size: clamp(0.7rem, 1.5vw, 0.75rem);
             padding-top: 1.5rem;
             border-top: 1px solid var(--machined-line);
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
         }
 
         .featured-span {
@@ -240,15 +436,16 @@
 
         .stat-item {
             flex: 1;
-            padding: 4rem;
+            padding: clamp(2rem, 5vw, 4rem);
             border-right: 1px solid var(--basalt-edge);
             text-align: center;
+            min-width: 150px;
         }
 
         .stat-value {
             display: block;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 3rem;
+            font-size: clamp(2rem, 5vw, 3rem);
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 0.5rem;
@@ -256,7 +453,7 @@
 
         .stat-label {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.7rem;
+            font-size: clamp(0.65rem, 1.5vw, 0.7rem);
             text-transform: uppercase;
             letter-spacing: 0.2em;
             color: var(--accent-cyan);
@@ -264,16 +461,17 @@
 
         .cta-monolith {
             display: inline-block;
-            padding: 1.25rem 3rem;
+            padding: clamp(1rem, 2.5vw, 1.25rem) clamp(2rem, 5vw, 3rem);
             background: var(--text-primary);
             color: var(--basalt-deep);
             text-decoration: none;
             font-family: 'JetBrains Mono', monospace;
             font-weight: 700;
             text-transform: uppercase;
-            font-size: 0.875rem;
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
             transition: all 0.3s;
             position: relative;
+            text-align: center;
         }
 
         .cta-monolith:hover {
@@ -338,26 +536,171 @@
         }
 
         @media (max-width: 1024px) {
-            nav { padding: 1rem 2rem; }
-            .hero { padding: 0 2rem; }
-            .monolith-section { padding: 4rem 2rem; }
-            .grid-container { display: flex; flex-direction: column; }
-            .machined-block { grid-column: span 12; }
-            .featured-span { grid-column: span 12; }
-            .stat-strip { flex-direction: column; }
-            .stat-item { padding: 2rem; }
-            .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-            footer { padding: 4rem 2rem 2rem; }
+            nav { 
+                padding: 1.5rem 2rem; 
+            }
+            .hero { 
+                padding: 0 2rem; 
+                min-height: 80vh;
+            }
+            .monolith-section { 
+                padding: 4rem 2rem; 
+            }
+            .grid-container { 
+                display: flex; 
+                flex-direction: column; 
+                gap: 1px;
+            }
+            .machined-block { 
+                grid-column: span 12; 
+            }
+            .featured-span { 
+                grid-column: span 12; 
+            }
+            .stat-strip { 
+                flex-direction: column; 
+            }
+            .stat-item { 
+                padding: 2rem; 
+                border-right: none;
+                border-bottom: 1px solid var(--basalt-edge);
+            }
+            .stat-item:last-child {
+                border-bottom: none;
+            }
+            .footer-grid { 
+                grid-template-columns: 1fr 1fr; 
+                gap: 2rem; 
+            }
+            footer { 
+                padding: 4rem 2rem 2rem; 
+            }
+            .hamburger {
+                display: flex;
+            }
+            .nav-links,
+            nav .cta-monolith {
+                display: none;
+            }
+            .cta-monolith:hover {
+                transform: translateX(5px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                max-width: 320px;
+            }
+            h1 {
+                font-size: clamp(2.5rem, 10vw, 4rem);
+            }
+            .hero {
+                min-height: 70vh;
+            }
+            .monolith-section {
+                padding: 3rem 1.5rem;
+            }
+            .stat-item {
+                padding: 1.75rem;
+            }
         }
 
         @media (max-width: 640px) {
-            .nav-links { display: none; }
-            .footer-grid { grid-template-columns: 1fr; }
+            nav {
+                padding: 1rem 1.5rem;
+            }
+            .hero {
+                padding: 0 1.5rem;
+                min-height: 65vh;
+            }
+            .sidebar {
+                width: 100%;
+            }
+            .footer-grid { 
+                grid-template-columns: 1fr; 
+            }
+            h1 {
+                font-size: clamp(2rem, 12vw, 3rem);
+                line-height: 1;
+            }
+            .cta-monolith {
+                width: 100%;
+                max-width: 300px;
+            }
+            .monolith-section {
+                padding: 2.5rem 1.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                min-height: 60vh;
+                padding: 0 1.25rem;
+            }
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+            }
+            .stat-item {
+                padding: 1.5rem 1rem;
+            }
+            footer {
+                padding: 3rem 1.25rem 1.5rem;
+            }
+            .footer-grid {
+                gap: 2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="machined-grid"></div>
+    <!-- Animated Topographic Lines Background -->
+    <div class="topo-lines">
+        <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgba(0,255,213,0.1);stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:rgba(0,255,213,0.3);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgba(0,255,213,0.1);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <path class="topo-line" d="M 0 150 Q 300 100 600 150 T 1200 150" stroke="url(#lineGrad)" />
+            <path class="topo-line" d="M 0 250 Q 300 220 600 250 T 1200 250" stroke="url(#lineGrad)" />
+            <path class="topo-line" d="M 0 350 Q 300 310 600 350 T 1200 350" stroke="url(#lineGrad)" />
+            <path class="topo-line" d="M 0 450 Q 300 420 600 450 T 1200 450" stroke="url(#lineGrad)" />
+            <path class="topo-line" d="M 0 550 Q 300 510 600 550 T 1200 550" stroke="url(#lineGrad)" />
+            <path class="topo-line" d="M 0 650 Q 300 620 600 650 T 1200 650" stroke="url(#lineGrad)" />
+        </svg>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <img src="av-logo-white.png" alt="Artifact Virtual">
+            </div>
+            <button class="sidebar-close" id="sidebarClose">×</button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="infrastructure.html">Infrastructure</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="privacy-policy.html">Privacy</a></li>
+                <li><a href="terms-of-service.html">Terms</a></li>
+                <li><a href="sla.html">SLA</a></li>
+            </ul>
+        </nav>
+        <a href="mailto:info@artifactvirtual.com" class="sidebar-cta">Initialize Contact</a>
+        <div class="sidebar-footer">
+            <p>SYSTEM_STATUS: OPERATIONAL</p>
+            <p style="margin-top: 0.5rem;">v.4.0.1</p>
+        </div>
+    </aside>
 
     <nav>
         <a href="index.html" class="logo">
@@ -371,6 +714,11 @@
             <li><a href="terms-of-service.html">Terms</a></li>
             <li><a href="sla.html">SLA</a></li>
         </ul>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <a href="mailto:info@artifactvirtual.com" class="cta-monolith" style="padding: 0.75rem 1.5rem; font-size: 0.7rem;">Initialize_Contact</a>
     </nav>
 
@@ -507,6 +855,42 @@
     </footer>
 
     <script>
+        // Sidebar functionality
+        const hamburger = document.getElementById('hamburger');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarClose = document.getElementById('sidebarClose');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+        function openSidebar() {
+            sidebar.classList.add('active');
+            sidebarOverlay.classList.add('active');
+            hamburger.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove('active');
+            sidebarOverlay.classList.remove('active');
+            hamburger.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', () => {
+            if (sidebar.classList.contains('active')) {
+                closeSidebar();
+            } else {
+                openSidebar();
+            }
+        });
+
+        sidebarClose.addEventListener('click', closeSidebar);
+        sidebarOverlay.addEventListener('click', closeSidebar);
+
+        // Close sidebar on navigation
+        document.querySelectorAll('.sidebar-nav a').forEach(link => {
+            link.addEventListener('click', closeSidebar);
+        });
+
         // Smooth parallax effect for blocks
         document.addEventListener('mousemove', (e) => {
             const blocks = document.querySelectorAll('.machined-block');
@@ -517,6 +901,24 @@
                 }
             });
         });
+
+        // Enhanced topographic line animation with smooth wave motion
+        const topoLines = document.querySelectorAll('.topo-line');
+        const ANIMATION_SPEED = 0.005; // Controls the speed of wave movement
+        const PHASE_MULTIPLIER = 0.5;  // Controls the phase offset between lines
+        const AMPLITUDE = 15;           // Controls the vertical movement amplitude in pixels
+        
+        let animationTime = 0;
+        
+        function animateTopoLines() {
+            animationTime += ANIMATION_SPEED;
+            topoLines.forEach((line, i) => {
+                const offset = Math.sin(animationTime + i * PHASE_MULTIPLIER) * AMPLITUDE;
+                line.style.transform = `translateY(${offset}px)`;
+            });
+            requestAnimationFrame(animateTopoLines);
+        }
+        animateTopoLines();
     </script>
 </body>
 </html>
