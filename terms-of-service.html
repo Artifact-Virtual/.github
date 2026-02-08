@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service | Artifact Virtual</title>
     <meta name="description" content="Artifact Virtual Terms of Service - Terms and conditions for using our services.">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/av-logo-black.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -188,10 +188,25 @@
             font-size: 0.65rem;
             color: #444;
         }
+        @media (max-width: 1024px) {
+            nav { padding: 1.5rem 2rem; }
+            .content { padding: 3rem 1.5rem 6rem; }
+        }
+
         @media (max-width: 768px) {
-            nav { padding: 1rem 2rem; }
+            nav { padding: 1rem 1.5rem; }
             .nav-links { display: none; }
             .content { padding: 2rem 1rem 4rem; }
+        }
+
+        @media (max-width: 640px) {
+            nav { padding: 1rem 1.25rem; }
+            .content { padding: 2rem 0.75rem 3.5rem; }
+        }
+
+        @media (max-width: 480px) {
+            nav { padding: 1rem; }
+            .content { padding: 1.5rem 0.75rem 3rem; }
         }
     </style>
 </head>
