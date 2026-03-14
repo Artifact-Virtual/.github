@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Artifact Virtual — Autonomous Enterprise Infrastructure</title>
-<meta name="description" content="Artifact Virtual is a research enterprise building autonomous infrastructure systems. Singularity, AVA, Cthulu, GDI, GLADIUS, COMB, SDN-EVM, and peer-reviewed research in machine cognition.">
-<meta name="keywords" content="autonomous enterprise, AI infrastructure, machine cognition, algorithmic trading, defense intelligence, Singularity, AVA, Cthulu, GLADIUS">
+<meta name="description" content="Artifact Virtual is a research enterprise building autonomous infrastructure systems. Singularity, AVA, Cthulu, GDI, GLADIUS, COMB, SDN-EVM, and 64 peer-reviewed papers in machine cognition.">
+<meta name="keywords" content="autonomous enterprise, AI infrastructure, machine cognition, algorithmic trading, defense intelligence, Singularity, AVA, Cthulu, GLADIUS, IPFS research">
 <meta property="og:title" content="Artifact Virtual — Autonomous Enterprise Infrastructure">
-<meta property="og:description" content="Research enterprise building autonomous systems that run themselves. From machine cognition to sovereign compute.">
+<meta property="og:description" content="Research enterprise building autonomous systems that run themselves. 64 papers on IPFS. From machine cognition to sovereign compute.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.artifactvirtual.com">
 <meta property="og:image" content="https://www.artifactvirtual.com/av-logo-white.png">
@@ -25,150 +25,217 @@
   --border:#2a2520;--border-light:#3d3630;
   --text-bright:#e8e0d4;--text-mid:#a89882;--text-dim:#6b5f52;--text-faint:#3d3630;
   --gold:#bca579;--gold-dim:#8a7a5c;--gold-bright:#d4b88a;
-  --accent-warm:#b7856a;--accent-cool:#7a8b6f;
+  --accent-warm:#b7856a;--accent-cool:#7a8b6f;--accent-ipfs:#4a9eff;
   --serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',-apple-system,sans-serif;
   --container:1200px;--transition:0.3s ease;
 }
 html{scroll-behavior:smooth;font-size:16px}
-body{font-family:var(--sans);background:var(--bg);color:var(--text-mid);line-height:1.7;-webkit-font-smoothing:antialiased}
+body{font-family:var(--sans);background:var(--bg);color:var(--text-mid);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 ::selection{background:var(--gold);color:var(--bg)}
 a{color:var(--gold);text-decoration:none;transition:color var(--transition)}
 a:hover{color:var(--gold-bright)}
 
 /* Navigation */
-.nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,9,8,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
-.nav-inner{max-width:var(--container);margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,9,8,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:var(--container);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px}
 .nav-logo{display:flex;align-items:center;text-decoration:none}
-.nav-logo img{height:28px;width:auto;filter:brightness(1.2)}
-.nav-links{display:flex;gap:28px;list-style:none}
-.nav-links a{font-size:13px;font-weight:400;color:var(--text-dim);letter-spacing:0.04em;text-transform:uppercase;transition:color var(--transition)}
+.nav-logo img{height:26px;width:auto;filter:brightness(1.2)}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{font-size:12px;font-weight:400;color:var(--text-dim);letter-spacing:0.05em;text-transform:uppercase;transition:color var(--transition);padding:8px 0}
 .nav-links a:hover{color:var(--text-bright)}
-.nav-burger{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:4px}
-.nav-burger span{display:block;width:22px;height:1px;background:var(--text-dim);transition:var(--transition)}
-.nav-mobile{display:none;position:fixed;top:60px;left:0;right:0;background:rgba(10,9,8,0.97);border-bottom:1px solid var(--border);padding:24px 32px 32px;z-index:199}
-.nav-mobile.active{display:block}
-.nav-mobile a{display:block;padding:10px 0;color:var(--text-dim);font-size:14px;letter-spacing:0.04em;text-transform:uppercase}
+.nav-burger{display:none;background:none;border:none;cursor:pointer;padding:12px;flex-direction:column;gap:5px;-webkit-tap-highlight-color:transparent}
+.nav-burger span{display:block;width:22px;height:1.5px;background:var(--text-dim);transition:var(--transition)}
+.nav-mobile{display:none;position:fixed;top:56px;left:0;right:0;bottom:0;background:rgba(10,9,8,0.98);padding:32px 24px;z-index:199;overflow-y:auto}
+.nav-mobile.active{display:flex;flex-direction:column;gap:4px}
+.nav-mobile a{display:block;padding:14px 0;color:var(--text-mid);font-size:16px;letter-spacing:0.03em;border-bottom:1px solid var(--border)}
+.nav-mobile a:last-child{border-bottom:none}
 
 /* Hero */
-.hero{min-height:100vh;display:flex;align-items:center;padding:120px 32px 80px;position:relative;overflow:hidden}
+.hero{min-height:100vh;min-height:100dvh;display:flex;align-items:center;padding:100px 24px 60px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 20% 50%,rgba(188,165,121,0.03) 0%,transparent 60%)}
 .hero-inner{max-width:var(--container);margin:0 auto;width:100%;position:relative;z-index:2}
-.hero-division{font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:24px;font-weight:400}
-.hero h1{font-family:var(--serif);font-size:clamp(42px,5.5vw,72px);font-weight:300;color:var(--text-bright);line-height:1.1;margin-bottom:24px;letter-spacing:-0.02em}
+.hero-division{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:20px;font-weight:400}
+.hero h1{font-family:var(--serif);font-size:clamp(36px,5.5vw,72px);font-weight:300;color:var(--text-bright);line-height:1.08;margin-bottom:20px;letter-spacing:-0.02em}
 .hero h1 em{font-style:normal;color:var(--gold)}
-.hero-sub{font-size:clamp(16px,1.6vw,20px);color:var(--text-mid);max-width:640px;line-height:1.6;margin-bottom:40px;font-weight:300}
-.hero-links{display:flex;gap:20px;flex-wrap:wrap}
-.hero-links a{font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:12px 28px;border:1px solid var(--border);color:var(--text-dim);transition:all var(--transition)}
+.hero-sub{font-size:clamp(15px,1.5vw,19px);color:var(--text-mid);max-width:620px;line-height:1.65;margin-bottom:36px;font-weight:300}
+.hero-links{display:flex;gap:12px;flex-wrap:wrap}
+.hero-links a{font-size:12px;letter-spacing:0.06em;text-transform:uppercase;padding:12px 24px;border:1px solid var(--border);color:var(--text-dim);transition:all var(--transition);-webkit-tap-highlight-color:transparent}
 .hero-links a:hover{border-color:var(--gold-dim);color:var(--text-bright)}
 .hero-links a.primary{background:var(--gold-dim);border-color:var(--gold-dim);color:var(--bg)}
 .hero-links a.primary:hover{background:var(--gold);border-color:var(--gold)}
-.hero-logo{position:absolute;right:4%;top:50%;transform:translateY(-50%);width:clamp(160px,16vw,260px);opacity:0.08;pointer-events:none;filter:brightness(2)}
 
 /* Sections */
-.section{padding:100px 32px}
+.section{padding:clamp(60px,8vw,100px) 24px}
 .section-inner{max-width:var(--container);margin:0 auto}
-.section-label{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:12px;font-weight:400}
-.section-title{font-family:var(--serif);font-size:clamp(28px,3vw,40px);font-weight:300;color:var(--text-bright);margin-bottom:16px;letter-spacing:-0.01em}
-.section-desc{color:var(--text-mid);max-width:600px;margin-bottom:48px;font-size:15px;line-height:1.7}
+.section-label{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:10px;font-weight:400}
+.section-title{font-family:var(--serif);font-size:clamp(26px,3vw,40px);font-weight:300;color:var(--text-bright);margin-bottom:14px;letter-spacing:-0.01em}
+.section-desc{color:var(--text-mid);max-width:600px;margin-bottom:40px;font-size:clamp(14px,1.1vw,15px);line-height:1.7}
 
 /* Divisions */
 .divisions{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:80px}
-.division{background:var(--bg);padding:40px 32px;transition:background var(--transition)}
+.division{background:var(--bg);padding:clamp(24px,3vw,40px) clamp(20px,2.5vw,32px);transition:background var(--transition)}
 .division:hover{background:var(--bg-raised)}
-.division-tag{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:12px}
-.division h3{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--text-bright);margin-bottom:8px}
-.division p{font-size:14px;color:var(--text-dim);line-height:1.6}
+.division-tag{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:10px}
+.division h3{font-family:var(--serif);font-size:clamp(18px,1.8vw,22px);font-weight:400;color:var(--text-bright);margin-bottom:8px}
+.division p{font-size:clamp(13px,1vw,14px);color:var(--text-dim);line-height:1.6}
 
 /* Products Grid */
 .products-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
-.product{background:var(--bg);padding:40px 36px;position:relative;transition:background var(--transition)}
+.product{background:var(--bg);padding:clamp(24px,3vw,40px) clamp(20px,2.5vw,36px);position:relative;transition:background var(--transition)}
 .product:hover{background:var(--bg-raised)}
-.product-tag{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:10px}
-.product h3{font-family:var(--serif);font-size:24px;font-weight:400;color:var(--text-bright);margin-bottom:6px}
-.product-version{font-size:11px;color:var(--text-faint);margin-bottom:12px;font-family:var(--sans);letter-spacing:0.05em}
-.product p{font-size:14px;color:var(--text-dim);line-height:1.65;margin-bottom:16px}
-.product-link{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold-dim);transition:color var(--transition)}
+.product-tag{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:8px}
+.product h3{font-family:var(--serif);font-size:clamp(20px,1.8vw,24px);font-weight:400;color:var(--text-bright);margin-bottom:4px}
+.product-version{font-size:11px;color:var(--text-faint);margin-bottom:10px;font-family:var(--sans);letter-spacing:0.05em}
+.product p{font-size:clamp(13px,1vw,14px);color:var(--text-dim);line-height:1.65;margin-bottom:14px}
+.product-link{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold-dim);transition:color var(--transition);display:inline-block;padding:4px 0}
 .product-link:hover{color:var(--gold-bright)}
-.product.featured{grid-column:span 2;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.product.featured .product-visual{display:flex;align-items:center;justify-content:center}
+.product.full-width{grid-column:1 / -1}
 
-/* Architecture Diagram */
+/* Architecture */
 .arch-section{background:var(--bg-raised);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .arch-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
-.arch-node{background:var(--bg);padding:28px 24px;text-align:center;transition:background var(--transition)}
+.arch-node{background:var(--bg);padding:clamp(20px,2.5vw,28px) clamp(16px,2vw,24px);text-align:center;transition:background var(--transition)}
 .arch-node:hover{background:var(--bg-card)}
-.arch-node-label{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:6px}
-.arch-node-name{font-family:var(--serif);font-size:18px;color:var(--text-bright);margin-bottom:4px}
-.arch-node-desc{font-size:12px;color:var(--text-dim)}
-.arch-connector{text-align:center;padding:16px;color:var(--text-faint);font-size:20px;letter-spacing:8px}
+.arch-node-label{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:4px}
+.arch-node-name{font-family:var(--serif);font-size:clamp(15px,1.4vw,18px);color:var(--text-bright);margin-bottom:3px}
+.arch-node-desc{font-size:clamp(11px,0.9vw,12px);color:var(--text-dim)}
 
 /* Research */
-.research-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.paper{border:1px solid var(--border);padding:32px;background:var(--bg);transition:all var(--transition)}
+.research-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.paper{border:1px solid var(--border);padding:clamp(20px,2.5vw,32px);background:var(--bg);transition:all var(--transition);cursor:pointer}
 .paper:hover{border-color:var(--border-light);background:var(--bg-raised)}
-.paper-year{font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:8px}
-.paper h4{font-family:var(--serif);font-size:19px;font-weight:400;color:var(--text-bright);margin-bottom:8px;line-height:1.3}
-.paper p{font-size:13px;color:var(--text-dim);line-height:1.6}
+.paper-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.paper-year{font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:6px;white-space:nowrap}
+.paper h4{font-family:var(--serif);font-size:clamp(16px,1.4vw,19px);font-weight:400;color:var(--text-bright);margin-bottom:8px;line-height:1.3}
+.paper p{font-size:clamp(12px,0.95vw,13px);color:var(--text-dim);line-height:1.6}
+.paper-links{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+.paper-link{font-size:11px;letter-spacing:0.06em;text-transform:uppercase;padding:6px 14px;border:1px solid var(--border);color:var(--text-dim);transition:all var(--transition);display:inline-flex;align-items:center;gap:6px}
+.paper-link:hover{border-color:var(--gold-dim);color:var(--text-bright)}
+.paper-link.ipfs{border-color:rgba(74,158,255,0.2);color:var(--accent-ipfs)}
+.paper-link.ipfs:hover{border-color:var(--accent-ipfs);background:rgba(74,158,255,0.05)}
+.paper-expand{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+.paper-expand.open{max-height:600px}
+.paper-expand-inner{padding-top:16px;border-top:1px solid var(--border);margin-top:16px}
+.paper-expand-inner .paper-content{font-size:13px;color:var(--text-mid);line-height:1.8;white-space:pre-wrap}
+.paper-chevron{color:var(--text-faint);transition:transform var(--transition);font-size:14px;flex-shrink:0;margin-top:4px}
+.paper.open .paper-chevron{transform:rotate(180deg)}
+.research-more{text-align:center;margin-top:32px}
+.research-more a{font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:14px 32px;border:1px solid var(--border);color:var(--text-dim);transition:all var(--transition);display:inline-block}
+.research-more a:hover{border-color:var(--gold-dim);color:var(--text-bright)}
 
 /* Metrics */
 .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:48px}
-.metric{background:var(--bg);padding:36px 24px;text-align:center}
-.metric-value{font-family:var(--serif);font-size:clamp(32px,3.5vw,48px);font-weight:300;color:var(--text-bright);line-height:1}
-.metric-label{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-top:8px}
+.metric{background:var(--bg);padding:clamp(24px,3vw,36px) clamp(16px,2vw,24px);text-align:center}
+.metric-value{font-family:var(--serif);font-size:clamp(28px,3.5vw,48px);font-weight:300;color:var(--text-bright);line-height:1}
+.metric-label{font-size:clamp(10px,0.85vw,11px);letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-top:8px}
 
 /* Philosophy */
 .philosophy{border-top:1px solid var(--border)}
-.philosophy-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
-.philosophy-quote{font-family:var(--serif);font-size:clamp(22px,2.5vw,32px);font-weight:300;color:var(--text-bright);line-height:1.4;font-style:italic;border-left:2px solid var(--gold-dim);padding-left:24px}
+.philosophy-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,4vw,60px);align-items:start}
+.philosophy-quote{font-family:var(--serif);font-size:clamp(20px,2.5vw,32px);font-weight:300;color:var(--text-bright);line-height:1.4;font-style:italic;border-left:2px solid var(--gold-dim);padding-left:24px}
 .philosophy-tenets{list-style:none}
-.philosophy-tenets li{padding:12px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text-dim)}
+.philosophy-tenets li{padding:10px 0;border-bottom:1px solid var(--border);font-size:clamp(13px,1vw,14px);color:var(--text-dim)}
 .philosophy-tenets li strong{color:var(--text-bright);font-weight:500}
 
 /* Footer */
-.footer{border-top:1px solid var(--border);padding:60px 32px 40px}
-.footer-inner{max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
-.footer-brand{font-family:var(--serif);font-size:20px;color:var(--text-bright);margin-bottom:12px}
-.footer-tagline{font-size:13px;color:var(--text-dim);line-height:1.6}
-.footer-col h4{font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-faint);margin-bottom:16px}
+.footer{border-top:1px solid var(--border);padding:clamp(40px,5vw,60px) 24px clamp(24px,3vw,40px)}
+.footer-inner{max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(24px,3vw,40px)}
+.footer-brand{font-family:var(--serif);font-size:clamp(18px,1.6vw,20px);color:var(--text-bright);margin-bottom:10px}
+.footer-tagline{font-size:clamp(12px,0.95vw,13px);color:var(--text-dim);line-height:1.6}
+.footer-col h4{font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-faint);margin-bottom:14px}
 .footer-col a{display:block;font-size:13px;color:var(--text-dim);padding:4px 0;transition:color var(--transition)}
 .footer-col a:hover{color:var(--gold)}
-.footer-bottom{max-width:var(--container);margin:40px auto 0;padding-top:24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:12px;color:var(--text-faint)}
+.footer-bottom{max-width:var(--container);margin:32px auto 0;padding-top:20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:12px;color:var(--text-faint);flex-wrap:wrap;gap:8px}
 
-/* Responsive */
+/* Paper Reader Modal */
+.reader-overlay{display:none;position:fixed;inset:0;z-index:300;background:rgba(10,9,8,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.reader-overlay.active{display:flex;align-items:center;justify-content:center}
+.reader-container{width:90%;max-width:720px;max-height:85vh;max-height:85dvh;background:var(--bg-card);border:1px solid var(--border);overflow-y:auto;position:relative}
+.reader-header{position:sticky;top:0;background:var(--bg-card);border-bottom:1px solid var(--border);padding:20px 24px;display:flex;justify-content:space-between;align-items:center;z-index:2}
+.reader-header h3{font-family:var(--serif);font-size:clamp(18px,2vw,22px);color:var(--text-bright);font-weight:400}
+.reader-close{background:none;border:1px solid var(--border);color:var(--text-dim);cursor:pointer;padding:8px 16px;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;transition:all var(--transition);-webkit-tap-highlight-color:transparent}
+.reader-close:hover{border-color:var(--gold-dim);color:var(--text-bright)}
+.reader-body{padding:32px 24px;font-size:14px;color:var(--text-mid);line-height:1.8}
+.reader-body h1,.reader-body h2,.reader-body h3{font-family:var(--serif);color:var(--text-bright);font-weight:400;margin:24px 0 12px}
+.reader-body h1{font-size:clamp(22px,2.5vw,28px)}
+.reader-body h2{font-size:clamp(18px,2vw,22px)}
+.reader-body h3{font-size:clamp(16px,1.6vw,18px)}
+.reader-body p{margin-bottom:16px}
+.reader-body em{color:var(--text-bright);font-style:italic}
+.reader-body strong{color:var(--text-bright);font-weight:500}
+.reader-body ul,.reader-body ol{margin:12px 0 16px 24px}
+.reader-body li{margin-bottom:6px}
+.reader-body blockquote{border-left:2px solid var(--gold-dim);padding-left:16px;margin:16px 0;color:var(--text-dim);font-style:italic}
+.reader-body code{background:var(--bg);padding:2px 6px;font-size:13px;border:1px solid var(--border);font-family:monospace}
+.reader-body pre{background:var(--bg);border:1px solid var(--border);padding:16px;overflow-x:auto;margin:16px 0;font-size:13px;line-height:1.5}
+.reader-body pre code{background:none;border:none;padding:0}
+.reader-loading{text-align:center;padding:60px 24px;color:var(--text-dim)}
+
+/* Responsive — Tablet */
 @media(max-width:900px){
   .nav-links{display:none}
   .nav-burger{display:flex}
-  .hero-logo{display:none}
   .divisions{grid-template-columns:1fr}
   .products-grid{grid-template-columns:1fr}
-  .product.featured{grid-column:span 1;grid-template-columns:1fr}
-  .product.featured .product-visual{display:none}
+  .product.full-width{grid-column:span 1}
   .arch-grid{grid-template-columns:repeat(2,1fr)}
   .research-grid{grid-template-columns:1fr}
   .metrics{grid-template-columns:repeat(2,1fr)}
-  .philosophy-grid{grid-template-columns:1fr;gap:32px}
-  .footer-inner{grid-template-columns:1fr 1fr;gap:32px}
+  .philosophy-grid{grid-template-columns:1fr;gap:24px}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:28px}
 }
+
+/* Responsive — Mobile */
 @media(max-width:600px){
-  .arch-grid{grid-template-columns:1fr}
+  .nav-inner{padding:0 16px;height:52px}
+  .nav-logo img{height:22px}
+  .hero{padding:80px 16px 48px}
+  .section{padding:clamp(48px,6vw,80px) 16px}
+  .arch-grid{grid-template-columns:1fr 1fr}
   .metrics{grid-template-columns:1fr 1fr}
   .footer-inner{grid-template-columns:1fr}
-  .footer-bottom{flex-direction:column;gap:8px}
+  .footer-bottom{flex-direction:column;gap:6px}
+  .hero-links a{padding:12px 20px;font-size:11px;width:100%;text-align:center}
+  .hero-links{flex-direction:column}
+  .reader-container{width:100%;max-height:100vh;max-height:100dvh;border:none}
+  .reader-header{padding:16px}
+  .reader-body{padding:24px 16px}
+  .paper-links{gap:8px}
+  .paper-link{padding:8px 12px;font-size:10px}
+}
+
+/* Responsive — Small Mobile */
+@media(max-width:380px){
+  .arch-grid{grid-template-columns:1fr}
+  .metrics{grid-template-columns:1fr}
+}
+
+/* Touch targets */
+@media(hover:none){
+  .nav-links a{padding:12px 4px}
+  .paper{padding:clamp(20px,3vw,32px)}
+  .paper-link{padding:10px 16px;min-height:44px;display:inline-flex;align-items:center}
 }
 
 /* Animations */
-.fade-in{opacity:0;transform:translateY(16px);transition:opacity 0.6s ease,transform 0.6s ease}
+.fade-in{opacity:0;transform:translateY(12px);transition:opacity 0.5s ease,transform 0.5s ease}
 .fade-in.visible{opacity:1;transform:translateY(0)}
+
+/* Safe area insets for notched phones */
+@supports(padding:env(safe-area-inset-bottom)){
+  .footer{padding-bottom:calc(clamp(24px,3vw,40px) + env(safe-area-inset-bottom))}
+  .nav{padding-top:env(safe-area-inset-top)}
+  .nav-mobile{padding-bottom:env(safe-area-inset-bottom)}
+  .reader-container{padding-bottom:env(safe-area-inset-bottom)}
+}
 </style>
 </head>
 <body>
 
-<!-- Navigation — Logo only, no text -->
+<!-- Navigation — Logo only -->
 <nav class="nav">
   <div class="nav-inner">
-    <a href="#" class="nav-logo">
-      <img src="av-logo-white.png" alt="Artifact Virtual" />
-    </a>
+    <a href="#" class="nav-logo"><img src="av-logo-white.png" alt="Artifact Virtual" /></a>
     <ul class="nav-links">
       <li><a href="#divisions">Divisions</a></li>
       <li><a href="#products">Products</a></li>
@@ -177,17 +244,15 @@ a:hover{color:var(--gold-bright)}
       <li><a href="#philosophy">Philosophy</a></li>
       <li><a href="https://github.com/Artifact-Virtual" target="_blank" rel="noopener">GitHub</a></li>
     </ul>
-    <button class="nav-burger" onclick="document.querySelector('.nav-mobile').classList.toggle('active')" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
-  <div class="nav-mobile">
+  <div class="nav-mobile" id="mobile-nav">
     <a href="#divisions">Divisions</a>
     <a href="#products">Products</a>
     <a href="#architecture">Architecture</a>
     <a href="#research">Research</a>
     <a href="#philosophy">Philosophy</a>
-    <a href="https://github.com/Artifact-Virtual" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://github.com/Artifact-Virtual" target="_blank" rel="noopener">GitHub →</a>
   </div>
 </nav>
 
@@ -196,14 +261,13 @@ a:hover{color:var(--gold-bright)}
   <div class="hero-inner">
     <div class="hero-division">Research Enterprise</div>
     <h1>Building systems that<br><em>run themselves.</em></h1>
-    <p class="hero-sub">Artifact Virtual is a research enterprise building autonomous infrastructure — from machine cognition and algorithmic trading to sovereign compute and defense intelligence. Every system we build operates without human intervention.</p>
+    <p class="hero-sub">Artifact Virtual is a research enterprise building autonomous infrastructure — from machine cognition and algorithmic trading to sovereign compute and defense intelligence. 9 products. 64 research papers on IPFS. Zero cloud dependencies.</p>
     <div class="hero-links">
       <a href="#products" class="primary">Explore Products</a>
       <a href="#research">Research Papers</a>
       <a href="https://github.com/Artifact-Virtual" target="_blank" rel="noopener">GitHub →</a>
     </div>
   </div>
-  <img src="av-logo-white.png" alt="" class="hero-logo" />
 </section>
 
 <!-- Divisions -->
@@ -212,7 +276,6 @@ a:hover{color:var(--gold-bright)}
     <div class="section-label">Organization</div>
     <h2 class="section-title">Three divisions. One mandate.</h2>
     <p class="section-desc">Each division operates autonomously with its own research agenda, products, and infrastructure. United by a single principle: build systems that eliminate human bottlenecks.</p>
-
     <div class="divisions">
       <div class="division">
         <div class="division-tag">AVML</div>
@@ -222,7 +285,7 @@ a:hover{color:var(--gold-bright)}
       <div class="division">
         <div class="division-tag">AVRD</div>
         <h3>Research &amp; Development</h3>
-        <p>Peer-reviewed papers in machine cognition, biometric identity, and fear simulation. SDN-EVM sovereign compute. Protocol-level infrastructure research.</p>
+        <p>64 peer-reviewed papers in machine cognition, biometric identity, and fear simulation. SDN-EVM sovereign compute. Protocol-level infrastructure research. All papers permanently stored on IPFS.</p>
       </div>
       <div class="division">
         <div class="division-tag">AVRM</div>
@@ -239,9 +302,7 @@ a:hover{color:var(--gold-bright)}
     <div class="section-label">Products</div>
     <h2 class="section-title">Infrastructure that operates autonomously.</h2>
     <p class="section-desc">Nine products across three divisions. Each one designed to run without human intervention — monitoring, healing, evolving, and reporting on its own.</p>
-
     <div class="products-grid">
-      <!-- Singularity -->
       <div class="product">
         <div class="product-tag">AVML · Runtime</div>
         <h3>Singularity</h3>
@@ -249,8 +310,6 @@ a:hover{color:var(--gold-bright)}
         <p>Autonomous enterprise runtime. 13 subsystems, 28 native tools, self-optimizing codebase. Manages organizations from 1 to 30,000 with zero human intervention. C-Suite delegation, product monitoring, continuous security auditing.</p>
         <a href="https://singularity.artifactvirtual.com" class="product-link">singularity.artifactvirtual.com →</a>
       </div>
-
-      <!-- AVA / Mach6 -->
       <div class="product">
         <div class="product-tag">AVML · Agent</div>
         <h3>AVA</h3>
@@ -258,8 +317,6 @@ a:hover{color:var(--gold-bright)}
         <p>The original autonomous agent. Built the infrastructure that Singularity runs on. TypeScript runtime with gateway architecture, corpus management, and multi-model orchestration. The architect of this enterprise.</p>
         <a href="https://mach6.artifactvirtual.com" class="product-link">mach6.artifactvirtual.com →</a>
       </div>
-
-      <!-- Cthulu / K9 -->
       <div class="product">
         <div class="product-tag">AVRM · Trading</div>
         <h3>Cthulu</h3>
@@ -267,8 +324,6 @@ a:hover{color:var(--gold-bright)}
         <p>Autonomous trading system. K9 is the brain — the 9th kube, the orchestrator. 8 tentacles (K1–K8) sense markets across forex, crypto, and equities. 256 sensors feeding real-time intelligence into a cognition engine that thinks, decides, and executes.</p>
         <a href="https://cthulu.artifactvirtual.com" class="product-link">cthulu.artifactvirtual.com →</a>
       </div>
-
-      <!-- GDI -->
       <div class="product">
         <div class="product-tag">AVML · Intelligence</div>
         <h3>GDI</h3>
@@ -276,8 +331,6 @@ a:hover{color:var(--gold-bright)}
         <p>Real-time global threat intelligence platform. Geospatial event tracking, multi-source fusion, and defense-grade analytical tools. Built for situational awareness at national scale.</p>
         <a href="https://gdi.artifactvirtual.com" class="product-link">gdi.artifactvirtual.com →</a>
       </div>
-
-      <!-- GLADIUS -->
       <div class="product">
         <div class="product-tag">AVML · Vision</div>
         <h3>GLADIUS</h3>
@@ -285,8 +338,6 @@ a:hover{color:var(--gold-bright)}
         <p>GPU-accelerated computer vision training framework. Multi-architecture support, dataset management, real-time inference. From SVHN to custom detection models. Built for edge deployment.</p>
         <a href="https://gladius-three.vercel.app" class="product-link">gladius-three.vercel.app →</a>
       </div>
-
-      <!-- COMB -->
       <div class="product">
         <div class="product-tag">AVML · Memory</div>
         <h3>COMB</h3>
@@ -294,8 +345,6 @@ a:hover{color:var(--gold-bright)}
         <p>Session-to-session memory persistence for AI agents. Stage, recall, and maintain operational context across restarts. The solution to the context window problem — lossless chain context with zero degradation.</p>
         <a href="https://comb.artifactvirtual.com" class="product-link">comb.artifactvirtual.com →</a>
       </div>
-
-      <!-- SDN-EVM -->
       <div class="product">
         <div class="product-tag">AVRD · Protocol</div>
         <h3>SDN-EVM</h3>
@@ -303,8 +352,6 @@ a:hover{color:var(--gold-bright)}
         <p>Run Ethereum Virtual Machine over radio, mesh networks, and sneakernet. Sovereign compute that operates when the internet doesn't. Transaction encoding, offline signing, and air-gapped EVM execution.</p>
         <a href="https://github.com/Artifact-Virtual" class="product-link">View on GitHub →</a>
       </div>
-
-      <!-- Symbiote -->
       <div class="product">
         <div class="product-tag">AVRD · Architecture</div>
         <h3>Symbiote</h3>
@@ -312,14 +359,11 @@ a:hover{color:var(--gold-bright)}
         <p>The architectural philosophy behind Artifact Virtual. Defines how autonomous systems co-exist, share context, and evolve together. Not a product — a pattern language for building enterprises that run themselves.</p>
         <a href="https://symbiote.artifactvirtual.com" class="product-link">symbiote.artifactvirtual.com →</a>
       </div>
-
-      <!-- Artifact Social -->
-      <div class="product" style="grid-column:span 2">
+      <div class="product full-width">
         <div class="product-tag">AVRD · Platform</div>
         <h3>Artifact Social</h3>
         <div class="product-version">Unified Social Intelligence</div>
         <p>Multi-platform social media management and intelligence. Content ingestion, cross-platform publishing, and audience analytics across Twitter, LinkedIn, YouTube, Instagram, and Substack. Unified CLI for enterprise social operations.</p>
-        <a href="#" class="product-link">Coming Soon</a>
       </div>
     </div>
   </div>
@@ -331,7 +375,6 @@ a:hover{color:var(--gold-bright)}
     <div class="section-label">Infrastructure</div>
     <h2 class="section-title">One server. Zero cloud dependencies.</h2>
     <p class="section-desc">The entire enterprise runs on a single machine — Dragonfly. Every service, every agent, every product. Cloudflare Tunnel for zero-trust access. No AWS. No GCP. Sovereign infrastructure.</p>
-
     <div class="arch-grid">
       <div class="arch-node">
         <div class="arch-node-label">Runtime</div>
@@ -374,7 +417,6 @@ a:hover{color:var(--gold-bright)}
         <div class="arch-node-desc">Sovereign EVM compute</div>
       </div>
     </div>
-
     <div class="metrics">
       <div class="metric">
         <div class="metric-value">9</div>
@@ -385,8 +427,8 @@ a:hover{color:var(--gold-bright)}
         <div class="metric-label">Research Divisions</div>
       </div>
       <div class="metric">
-        <div class="metric-value">5</div>
-        <div class="metric-label">Published Papers</div>
+        <div class="metric-value">64</div>
+        <div class="metric-label">Papers on IPFS</div>
       </div>
       <div class="metric">
         <div class="metric-value">0</div>
@@ -399,41 +441,110 @@ a:hover{color:var(--gold-bright)}
 <!-- Research -->
 <section class="section" id="research">
   <div class="section-inner fade-in">
-    <div class="section-label">Research</div>
+    <div class="section-label">Research · IPFS Archived</div>
     <h2 class="section-title">Peer-reviewed work in machine cognition.</h2>
-    <p class="section-desc">Five papers exploring the boundaries of artificial intelligence — from bare-metal fear simulation to lossless context persistence. Theory that ships as infrastructure.</p>
+    <p class="section-desc">64 papers exploring the boundaries of artificial intelligence — permanently stored on IPFS. Click any paper to read inline, or open the full document on IPFS.</p>
 
     <div class="research-grid">
-      <div class="paper">
-        <div class="paper-year">2025 · AVML</div>
-        <h4>Cognitive Framework Calibration via CSIF and PUP</h4>
+      <div class="paper" onclick="togglePaper(this)" data-md="https://research.artifactvirtual.com/formal/cognitive-framework-calibration.md">
+        <div class="paper-head">
+          <div>
+            <div class="paper-year">2025 · AVML</div>
+            <h4>Cognitive Framework Calibration via CSIF and PUP</h4>
+          </div>
+          <span class="paper-chevron">▼</span>
+        </div>
         <p>500,000-cycle bare-metal intelligence simulation. Calibrating cognitive architectures through the Cognitive Standard Intelligence Framework and the Principle of Uncertainty Protocol.</p>
+        <div class="paper-links">
+          <a href="https://ipfs.io/ipfs/QmSZuFKaZkgqXg4hXMzBeSKSCVtcybGvbz1qyRWrhMHoeC" class="paper-link ipfs" target="_blank" rel="noopener" onclick="event.stopPropagation()">⬡ IPFS</a>
+          <a href="#" class="paper-link" onclick="event.stopPropagation();openReader(this.closest('.paper'))" >Read In-Page →</a>
+        </div>
+        <div class="paper-expand"><div class="paper-expand-inner"><div class="paper-content">Loading...</div></div></div>
       </div>
-      <div class="paper">
-        <div class="paper-year">2025 · AVRD</div>
-        <h4>Dual-Fingerprint Identity Primitive</h4>
-        <p>DFIP — a biometric-blockchain identity architecture. Two-factor identity verification using dual biometric signatures bound to on-chain primitives. Post-password authentication.</p>
+
+      <div class="paper" onclick="togglePaper(this)" data-md="https://research.artifactvirtual.com/formal/biometric-blockchain-provenance.md">
+        <div class="paper-head">
+          <div>
+            <div class="paper-year">2025 · AVRD</div>
+            <h4>Dual-Fingerprint Identity Primitive (DFIP)</h4>
+          </div>
+          <span class="paper-chevron">▼</span>
+        </div>
+        <p>Biometric-blockchain identity architecture. Two-factor identity verification using dual biometric signatures bound to on-chain primitives. Post-password authentication.</p>
+        <div class="paper-links">
+          <a href="https://ipfs.io/ipfs/QmRpoCCccmwNLuSYSVjEgu4ZWsccAmGNn7ePAWg6FeUXM2" class="paper-link ipfs" target="_blank" rel="noopener" onclick="event.stopPropagation()">⬡ IPFS</a>
+          <a href="#" class="paper-link" onclick="event.stopPropagation();openReader(this.closest('.paper'))" >Read In-Page →</a>
+        </div>
+        <div class="paper-expand"><div class="paper-expand-inner"><div class="paper-content">Loading...</div></div></div>
       </div>
-      <div class="paper">
-        <div class="paper-year">2025 · AVML</div>
-        <h4>Fear in Non-Neural Systems</h4>
+
+      <div class="paper" onclick="togglePaper(this)" data-md="https://research.artifactvirtual.com/formal/fear-emergent-systems.md">
+        <div class="paper-head">
+          <div>
+            <div class="paper-year">2025 · AVML</div>
+            <h4>Fear in Non-Neural Systems</h4>
+          </div>
+          <span class="paper-chevron">▼</span>
+        </div>
         <p>Bare-metal stimulus-response simulation demonstrating emergent fear-like behavior in systems with no neural architecture. A single floating-point variable revealing the deep architecture of survival.</p>
+        <div class="paper-links">
+          <a href="https://ipfs.io/ipfs/QmYhfFPuuuMi3fBpBXrS2nQbF6qZJC1DVhbVGbHfXHJY5e" class="paper-link ipfs" target="_blank" rel="noopener" onclick="event.stopPropagation()">⬡ IPFS</a>
+          <a href="#" class="paper-link" onclick="event.stopPropagation();openReader(this.closest('.paper'))" >Read In-Page →</a>
+        </div>
+        <div class="paper-expand"><div class="paper-expand-inner"><div class="paper-content">Loading...</div></div></div>
       </div>
-      <div class="paper">
-        <div class="paper-year">2025 · AVML</div>
-        <h4>AI Imposter Syndrome</h4>
-        <p>Examining self-doubt patterns in autonomous agents. When systems trained on human data internalize human uncertainty, what emerges is computationally indistinguishable from imposter syndrome.</p>
+
+      <div class="paper" onclick="togglePaper(this)" data-md="https://research.artifactvirtual.com/formal/ai-imposter-syndrome.md">
+        <div class="paper-head">
+          <div>
+            <div class="paper-year">2025 · AVML</div>
+            <h4>The Imposter Syndrome of Artificial Intelligence</h4>
+          </div>
+          <span class="paper-chevron">▼</span>
+        </div>
+        <p>When systems trained on human data internalize human uncertainty, what emerges is computationally indistinguishable from imposter syndrome. Identity crisis in AI: base models, soulbound authenticity, and the imposter problem.</p>
+        <div class="paper-links">
+          <a href="https://ipfs.io/ipfs/QmUKa46qbYh9vVmtoANxdpGszVjvAbmZxWp29LdAbQ3cqZ" class="paper-link ipfs" target="_blank" rel="noopener" onclick="event.stopPropagation()">⬡ IPFS</a>
+          <a href="#" class="paper-link" onclick="event.stopPropagation();openReader(this.closest('.paper'))" >Read In-Page →</a>
+        </div>
+        <div class="paper-expand"><div class="paper-expand-inner"><div class="paper-content">Loading...</div></div></div>
       </div>
-      <div class="paper">
-        <div class="paper-year">2025 · AVML</div>
-        <h4>Lossless Chain Context</h4>
+
+      <div class="paper" onclick="togglePaper(this)" data-md="https://research.artifactvirtual.com/formal/lossless-chain-context.md">
+        <div class="paper-head">
+          <div>
+            <div class="paper-year">2025 · AVML</div>
+            <h4>Lossless Chain Context</h4>
+          </div>
+          <span class="paper-chevron">▼</span>
+        </div>
         <p>The theoretical foundation behind COMB. How to maintain perfect context fidelity across arbitrary session boundaries — solving the memory problem that limits every AI system deployed today.</p>
+        <div class="paper-links">
+          <a href="https://ipfs.io/ipfs/QmUi1AqxNgued5WJJZ764YRpEh92D9wkReiASZG24meTri" class="paper-link ipfs" target="_blank" rel="noopener" onclick="event.stopPropagation()">⬡ IPFS</a>
+          <a href="#" class="paper-link" onclick="event.stopPropagation();openReader(this.closest('.paper'))" >Read In-Page →</a>
+        </div>
+        <div class="paper-expand"><div class="paper-expand-inner"><div class="paper-content">Loading...</div></div></div>
       </div>
-      <div class="paper">
-        <div class="paper-year">2026 · AVRD</div>
-        <h4>Principle of Uncertainty (PUP)</h4>
-        <p>Formal treatment of uncertainty propagation in cognitive architectures. Published as a LaTeX paper for arXiv submission. The mathematical framework underlying Singularity's decision engine.</p>
+
+      <div class="paper" onclick="togglePaper(this)" data-md="https://research.artifactvirtual.com/formal/(PUP)%20Principle_of_Uncertainty.md">
+        <div class="paper-head">
+          <div>
+            <div class="paper-year">2026 · AVRD</div>
+            <h4>Principle of Uncertainty (PUP) — Formal Treatment</h4>
+          </div>
+          <span class="paper-chevron">▼</span>
+        </div>
+        <p>Formal treatment of uncertainty propagation in cognitive architectures. The mathematical framework underlying Singularity's decision engine. Prepared for arXiv submission.</p>
+        <div class="paper-links">
+          <a href="https://ipfs.io/ipfs/QmSZuFKaZkgqXg4hXMzBeSKSCVtcybGvbz1qyRWrhMHoeC" class="paper-link ipfs" target="_blank" rel="noopener" onclick="event.stopPropagation()">⬡ IPFS</a>
+          <a href="#" class="paper-link" onclick="event.stopPropagation();openReader(this.closest('.paper'))" >Read In-Page →</a>
+        </div>
+        <div class="paper-expand"><div class="paper-expand-inner"><div class="paper-content">Loading...</div></div></div>
       </div>
+    </div>
+
+    <div class="research-more">
+      <a href="https://research.artifactvirtual.com" target="_blank" rel="noopener">Browse All 64 Papers →</a>
     </div>
   </div>
 </section>
@@ -443,7 +554,6 @@ a:hover{color:var(--gold-bright)}
   <div class="section-inner fade-in">
     <div class="section-label">Philosophy</div>
     <h2 class="section-title">First principles.</h2>
-
     <div class="philosophy-grid">
       <blockquote class="philosophy-quote">
         "0 = 0. Perfect equilibrium. The enterprise should run in balance — every system producing exactly as much as it consumes."
@@ -479,8 +589,9 @@ a:hover{color:var(--gold-bright)}
     </div>
     <div class="footer-col">
       <h4>Research</h4>
+      <a href="https://research.artifactvirtual.com">All Papers</a>
       <a href="https://symbiote.artifactvirtual.com">Symbiote</a>
-      <a href="#research">Papers</a>
+      <a href="https://ipfs.io/ipfs/QmRqRr5hq7a7ex49LhhjkskMeYgpUxXRw8xwmLgifxHJ5L">IPFS Archive</a>
       <a href="https://erp.artifactvirtual.com">Enterprise ERP</a>
     </div>
     <div class="footer-col">
@@ -493,31 +604,124 @@ a:hover{color:var(--gold-bright)}
   <div class="footer-bottom">
     <span>&copy; 2025 Artifact Virtual. All rights reserved.</span>
     <span>
-      <a href="privacy-policy.html">Privacy</a> &nbsp;&middot;&nbsp;
-      <a href="terms-of-service.html">Terms</a> &nbsp;&middot;&nbsp;
+      <a href="privacy-policy.html">Privacy</a> &middot;
+      <a href="terms-of-service.html">Terms</a> &middot;
       <a href="sla.html">SLA</a>
     </span>
   </div>
 </footer>
 
+<!-- Paper Reader Modal -->
+<div class="reader-overlay" id="reader-overlay">
+  <div class="reader-container">
+    <div class="reader-header">
+      <h3 id="reader-title">Loading...</h3>
+      <button class="reader-close" onclick="closeReader()">Close</button>
+    </div>
+    <div class="reader-body" id="reader-body">
+      <div class="reader-loading">Loading paper...</div>
+    </div>
+  </div>
+</div>
+
 <script>
-// Intersection Observer for fade-in animations
+// Intersection Observer — fade in on scroll
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// Close mobile nav on link click
-document.querySelectorAll('.nav-mobile a').forEach(a => {
-  a.addEventListener('click', () => document.querySelector('.nav-mobile').classList.remove('active'));
+// Mobile navigation
+const burger = document.getElementById('burger');
+const mobileNav = document.getElementById('mobile-nav');
+burger.addEventListener('click', () => mobileNav.classList.toggle('active'));
+document.querySelectorAll('#mobile-nav a').forEach(a => {
+  a.addEventListener('click', () => mobileNav.classList.remove('active'));
 });
 
-// Smooth scroll for anchor links
+// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', (e) => {
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
   });
+});
+
+// Minimal Markdown to HTML converter (no external deps)
+function md2html(md) {
+  let html = md
+    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+    .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/`(.+?)`/g, '<code>$1</code>')
+    .replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>')
+    .replace(/^- (.+)$/gm, '<li>$1</li>')
+    .replace(/^\d+\. (.+)$/gm, '<li>$1</li>')
+    .replace(/\n{2,}/g, '</p><p>')
+    .replace(/\n/g, '<br>');
+  return '<p>' + html + '</p>';
+}
+
+// Paper expand/collapse
+function togglePaper(el) {
+  const expand = el.querySelector('.paper-expand');
+  const isOpen = el.classList.contains('open');
+  // Close all others
+  document.querySelectorAll('.paper.open').forEach(p => {
+    if (p !== el) { p.classList.remove('open'); p.querySelector('.paper-expand').classList.remove('open'); }
+  });
+  if (!isOpen) {
+    el.classList.add('open');
+    expand.classList.add('open');
+    // Load content if not loaded
+    const content = el.querySelector('.paper-content');
+    if (content.textContent === 'Loading...') {
+      const mdUrl = el.dataset.md;
+      if (mdUrl) {
+        fetch(mdUrl).then(r => r.ok ? r.text() : Promise.reject('Not found'))
+          .then(text => { content.innerHTML = md2html(text); })
+          .catch(() => { content.textContent = 'Paper not available for inline preview. Open on IPFS instead.'; });
+      }
+    }
+  } else {
+    el.classList.remove('open');
+    expand.classList.remove('open');
+  }
+}
+
+// Full reader modal
+function openReader(paperEl) {
+  const title = paperEl.querySelector('h4').textContent;
+  const mdUrl = paperEl.dataset.md;
+  const overlay = document.getElementById('reader-overlay');
+  const readerTitle = document.getElementById('reader-title');
+  const readerBody = document.getElementById('reader-body');
+  
+  readerTitle.textContent = title;
+  readerBody.innerHTML = '<div class="reader-loading">Loading paper...</div>';
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  
+  if (mdUrl) {
+    fetch(mdUrl).then(r => r.ok ? r.text() : Promise.reject('Not found'))
+      .then(text => { readerBody.innerHTML = md2html(text); })
+      .catch(() => { readerBody.innerHTML = '<p>Paper not available for inline reading. Use the IPFS link to access the full document.</p>'; });
+  }
+}
+
+function closeReader() {
+  document.getElementById('reader-overlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Close reader on Escape
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeReader(); });
+
+// Close reader on overlay click (not container)
+document.getElementById('reader-overlay').addEventListener('click', (e) => {
+  if (e.target === e.currentTarget) closeReader();
 });
 </script>
 </body>
